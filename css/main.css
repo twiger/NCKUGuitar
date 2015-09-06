@@ -1,0 +1,49 @@
+/* Global */
+#main_content{
+	width:100% !important;
+}
+
+/* Master */
+.main_top.menu{
+	padding:2% 5%;
+}
+
+
+/* HOME Page */
+
+.slide.home-1{
+    background: url("../data/img/home/1.jpg") 0% 25% / cover no-repeat;
+}
+
+.slide.home-2{
+    background: url("../data/img/home/2.jpg") 0% 77% / cover no-repeat;
+}
+
+.slide.home-3{
+    background: url("../data/img/home/3.jpg") 0% 21% / cover no-repeat;
+}
+
+.slide.home-4{
+    background: url("../data/img/home/4.jpg") 0% 42% / cover no-repeat;
+}
+
+.owl-pagination{
+	margin-top: -4%;
+}
+
+.owl-theme .owl-controls .owl-page span{
+	background-color: aliceblue;
+}
+
+.owl-page .active > span{
+	opacity: 0.9;
+}
+
+.home-1 > p > span.photo_font{
+	color: aliceblue;
+	float:right;
+	margin-top: 15%;
+	margin-right: 17%;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
