@@ -17,6 +17,8 @@
     $(document)
         .ready(function() {
 
+            var current_master = "transparent";
+
             $.ajaxSetup({
                 cache: false
             });
@@ -37,8 +39,27 @@
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
 
                     $(".photo.slide").css("height", $(window).height());
+                    $(".master.dark_bg.menu").hide();
 
+                    $(".display_master_sidebar").click(function() {
+                        $('.ui.sidebar').sidebar('toggle');
+                    });
 
+                    $(window).bind('scroll', function() {
+                        var pos_y = window.pageYOffset || document.documentElement.scrollTop;
+                        // Master Menu BG Black
+                        if (pos_y > $(window).height() && current_master == "transparent") {
+                            $('.master.menu').css('display',"none");
+                            $('.master.dark_bg.menu').fadeIn();
+                            current_master = "dark_bg";
+                        } 
+                        else if (pos_y < $(window).height() && current_master == "dark_bg"){
+                            $('.master.menu').css("display", "flex").hide().fadeIn();
+                            $('.master.dark_bg.menu').css('display','none');
+                            current_master = "transparent";
+                        }
+
+                    });
 
                 });
             });
@@ -54,6 +75,10 @@
 
 
 
+
+
+
+
         })
     </script>
 </head>
@@ -63,7 +88,7 @@
     </div>
     <div id="main_content">
         <div class="ui grid">
-            <div class="row">
+            <div class="head row">
                 <div id="owl-carousel" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="photo slide home-1">
@@ -135,6 +160,24 @@
                     </div>
                 </div>
             </div>
+            <!--
+            <div class="mobile only row">
+                <div class="column">
+                    <div id="owl-carousel" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img class="ui fluid image" src="data/img/home/1.jpg">
+                            <div class="ui basic segment">
+                                <p>
+                                    曾經，你我都有過這樣的憧憬：
+                                    <br/>獨自坐在高腳椅上，鎂光燈聚焦在身上，
+                                    <br/>抱著吉他，抒情的旋律緩緩流瀉……。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        -->
         </div>
     </div>
     <div id="footer">

@@ -1,49 +1,92 @@
 /* Global */
-#main_content{
-	width:100% !important;
+
+#main_content {
+    width: 100% !important;
 }
 
+
 /* Master */
-.main_top.menu{
-	padding:2% 5%;
+
+.ui.master.grid {
+    position: absolute;
+    width: 100%;
+    z-index: +100;
 }
+
+.master.main_top.menu {
+    padding: 3% 6%;
+    width: 100%;
+}
+
+.dark_bg{
+	background-color: #1b1c1d !important;
+
+}
+
 
 
 /* HOME Page */
 
-.slide.home-1{
+.slide.home-1 {
     background: url("../data/img/home/1.jpg") 0% 25% / cover no-repeat;
 }
 
-.slide.home-2{
+.home-1 > p > span.photo_font {
+    color: aliceblue;
+    float: right;
+    margin-top: 15%;
+    margin-right: 17%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.slide.home-2 {
     background: url("../data/img/home/2.jpg") 0% 77% / cover no-repeat;
 }
 
-.slide.home-3{
+.slide.home-3 {
     background: url("../data/img/home/3.jpg") 0% 21% / cover no-repeat;
 }
 
-.slide.home-4{
+.slide.home-4 {
     background: url("../data/img/home/4.jpg") 0% 42% / cover no-repeat;
 }
 
-.owl-pagination{
-	margin-top: -4%;
+.owl-pagination {
+    margin-top: -4%;
 }
 
-.owl-theme .owl-controls .owl-page span{
-	background-color: aliceblue;
+@media (max-width: 880px) {
+    .slide.home-1 {
+        background: url("../data/img/home/1.jpg") 27% 25% / cover no-repeat;
+    }
+    .home-1 > p > span.photo_font {
+        color: aliceblue;
+        position:absolute;
+        margin:12%;
+        bottom:5%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .slide.home-2 {
+        background: url("../data/img/home/2.jpg") 0% 77% / cover no-repeat;
+    }
+    .slide.home-3 {
+        background: url("../data/img/home/3.jpg") 0% 21% / cover no-repeat;
+    }
+    .slide.home-4 {
+        background: url("../data/img/home/4.jpg") 36% 42% / cover no-repeat;
+    }
+    .owl-pagination,.owl-controls {
+        display:none;
+        margin-top:0px !important;
+    }
 }
 
-.owl-page .active > span{
-	opacity: 0.9;
+.owl-theme .owl-controls .owl-page span {
+    background-color: aliceblue;
 }
 
-.home-1 > p > span.photo_font{
-	color: aliceblue;
-	float:right;
-	margin-top: 15%;
-	margin-right: 17%;
-	font-size: 1.2rem;
-	line-height: 2rem;
+.owl-page .active > span {
+    opacity: 0.9;
 }

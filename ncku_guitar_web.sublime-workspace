@@ -1,0 +1,533 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"mari",
+				"margin-left"
+			],
+			[
+				"dis",
+				"display_content"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"MARGIN",
+				"margin-top"
+			],
+			[
+				"article",
+				"article_content"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"scroll",
+				"scrollShowDimmer"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"p",
+				"padding-left"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"selected",
+				"selected_id"
+			],
+			[
+				"pdf_",
+				"pdf_submit_form"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"stic",
+				"sticky_nav"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/P/turbogears/IdeaEditor/src/ideaeditor/templates/uploadIdea.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Apache24/htdocs/NCKUGuitar/index.html",
+		"/C/Apache24/htdocs/IICC/index.html",
+		"/C/Apache24/htdocs/IICC/master.html",
+		"/C/Apache24/htdocs/IICC/footer.html",
+		"/C/Apache24/htdocs/NCKUGuitar/dist/owl.theme.css",
+		"/C/Apache24/htdocs/NCKUGuitar/css/main.css",
+		"/C/Apache24/htdocs/TLBT/css/homepage.css",
+		"/C/Apache24/htdocs/TLBT/index.html",
+		"/C/Apache24/htdocs/NCKUGuitar/js/global.js",
+		"/C/Apache24/htdocs/NCKUGuitar/master.html",
+		"/C/Apache24/htdocs/NCKUGuitar/footer.html",
+		"/C/Apache24/htdocs/NCKUGuitar/dist/owl.carousel.js",
+		"/C/Apache24/htdocs/IICC/css/main.css",
+		"/C/Apache24/htdocs/NCKUGuitar/javascript/global.js",
+		"/C/Apache24/htdocs/IICC/js/global.js",
+		"/C/Apache24/htdocs/IICC/js/index.js",
+		"/C/Apache24/htdocs/TLBT/data/article/general.json",
+		"/C/Apache24/htdocs/TLBT/story_content.html",
+		"/C/Apache24/htdocs/IICC/download.html",
+		"/C/Apache24/htdocs/IICC/enrollment.html",
+		"/C/Apache24/htdocs/IICC/information.html",
+		"/C/Apache24/htdocs/IICC/history.html",
+		"/C/Apache24/htdocs/IICC/css/index.css",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/templates/uploadFact.html",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/templates/factProfile.html",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/templates/ideaProfile.html",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/templates/uploadIdea.html",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/templates/master.html",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/templates/multipleView.html",
+		"/C/Apache24/htdocs/IICC/about.html",
+		"/C/Apache24/htdocs/IICC/rules.html",
+		"/C/Apache24/htdocs/IICC/related_activity.html",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/templates/index.html",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/public/css/style.css",
+		"/P/turbogears/webhat2/webhat2/webhat2/templates/master.html",
+		"/P/turbogears/IdeaEditor/src/ideaeditor/templates/login.html",
+		"/P/turbogears/webhat2/webhat2/webhat2/templates/resources.html",
+		"/C/Apache24/htdocs/IICC/news/news.html",
+		"/C/Apache24/htdocs/IICC/home.html",
+		"/C/Apache24/htdocs/IICC/news/css/style.css",
+		"/C/Apache24/htdocs/IICC/news/index.html",
+		"/C/Apache24/htdocs/IICC/dist/vertical-timeline/css/style.css",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/vertical-timeline/vertical-timeline/js/main.js",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/vertical-timeline/vertical-timeline/index.html",
+		"/C/Apache24/htdocs/TLBT/infos.html",
+		"/C/Apache24/htdocs/TLBT/story_list.html",
+		"/C/Apache24/htdocs/IICC/competition_news.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/node/index.js",
+		"/C/Users/twiger/Documents/網頁研究小小兵/node/router.js",
+		"/C/Apache24/htdocs/IICC/server.js",
+		"/C/Apache24/htdocs/IICC/index.js",
+		"/C/Apache24/htdocs/TLBT/css/story_content.css",
+		"/C/Apache24/htdocs/TLBT/master.html",
+		"/C/Apache24/htdocs/TLBT/js/homepage.js",
+		"/C/Apache24/htdocs/TLBT/css/global.css",
+		"/C/Apache24/htdocs/TLBT/css/our_team.css",
+		"/C/Apache24/htdocs/TLBT/css/story_list.css",
+		"/C/Apache24/htdocs/TLBT/our_team.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/Clamp.js-master/examples/example1.html",
+		"/C/Apache24/htdocs/TLBT/js/dreamer.js",
+		"/C/Apache24/htdocs/TLBT/js/story_content.js",
+		"/C/Apache24/htdocs/TLBT/js/global.js",
+		"/C/Apache24/htdocs/TLBT/sitemap.xml",
+		"/C/Apache24/htdocs/TLBT/sitemap_3.xml",
+		"/C/Apache24/htdocs/TLBT/sitemap_4.xml",
+		"/C/Apache24/htdocs/TLBT/sitemap_2.xml",
+		"/C/Users/twiger/Downloads/sitemap.xml",
+		"/C/Apache24/htdocs/IICC/css/global.css",
+		"/C/Apache24/htdocs/IICC/js/master.js",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/setup.py",
+		"/C/Users/twiger/semantic/gulpfile.js",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/AutomaticClickWebsite.py",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/test/setup.py",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/splinter/__init__.py",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/for_0730.py",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/test/AutomaticClickWebsite.py",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/AutomaticClickURL_v2.py",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/pyinstaller-develop/PyInstaller/utils/winmanifest.py",
+		"/C/Python27/Lib/site-packages/pyinstaller-2.1-py2.7.egg/PyInstaller/utils/winmanifest.py",
+		"/C/Users/twiger/Desktop/AutomaticClickURL_v2.py",
+		"/C/Users/twiger/Documents/網頁研究小小兵/點擊程式/AutomaticClickURL.py",
+		"/C/Apache24/htdocs/TLBT/our_team_.html",
+		"/C/Apache24/htdocs/TLBT/controller/article_controller.js",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/owl.carousel/demos/images.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/owl.carousel/demos/one.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/owl.carousel/index.html",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/question_cloud/question_cloud/templates/view_hierarchy.html",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/data format/auto_complete_format.json",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/question_cloud/question_cloud/controllers/subcontrollers/hierarchy.py",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/question_cloud___/question_cloud/model/data/issues/kevin/1437108087.97.json",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/Jssor.Slider.FullPack/demos-jquery/image-gallery.source.html",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/question_cloud/question_cloud/templates/master.html",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/JS Search Library/suggest.js-master/src/example.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/Jssor.Slider.FullPack/demos-jquery/scrolling-logo-thumbnail-slider.source.html",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/question_cloud/question_cloud/model/data/nodes/1437108126.09.json",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/question_cloud/question_cloud/model/data/nodes/1437187735.53.json",
+		"/C/Users/twiger/Documents/DBSE/Group Meeting/2015 Spring Meeting/Summer Meeting/tool/JS Search Library/sketch/example.html",
+		"/C/Apache24/htdocs/TLBT_for_deploy/data/article/catering.json",
+		"/C/Apache24/htdocs/TLBT_for_deploy/js/global.js",
+		"/C/Apache24/htdocs/TLBT_for_deploy/master.html",
+		"/C/Apache24/htdocs/TLBT_for_deploy/story_list.html",
+		"/C/Apache24/htdocs/TLBT/data/article/catering.json",
+		"/C/Apache24/htdocs/TLBT/dreamer.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/ui-framework/freebie-footer-templates/footer-distributed-with-address-and-phones.html",
+		"/P/turbogears/AE_Repo/trunk/src/ExamAnalysis/examanalysis/templates/exam_list.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/VerticalTimeline/VerticalTimeline/js/modernizr.custom.js",
+		"/C/Apache24/htdocs/TLBT/index.php",
+		"/C/Apache24/htdocs/TLBT/css/dreamer.css",
+		"/P/turbogears/AE_Repo/trunk/src/final/final/final.py",
+		"/P/turbogears/AE_Repo/trunk/src/final_v1/final/temp.py",
+		"/P/turbogears/AE_Repo/trunk/src/final_v1/final/final.py",
+		"/C/Users/twiger/AppData/Roaming/Sublime Text 2/Packages/Sublime-HTMLPrettify-master/HTMLPrettify.sublime-settings",
+		"/P/turbogears/AE_Repo/trunk/src/final/final/result_to_client.py",
+		"/P/turbogears/AE_Repo/trunk/src/final/final/temp.py",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/example/js/controllers.js",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/example/todoWithRemoveAndEdit.html",
+		"/C/Users/twiger/Documents/DBSE/Computer Science/TA_SVN/trunk/Exam/Exam3/大一計概第一次期中考考題.docx",
+		"/C/Users/twiger/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/twiger/AppData/Roaming/Sublime Text 2/Packages/Pretty JSON/Pretty JSON.sublime-settings",
+		"/C/Users/twiger/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/example/todoWithRemove.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/example/todo.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/example/todoWithRemove.html.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/example/todo.html.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/example/test.html",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/angular.js",
+		"/C/Users/twiger/Documents/網頁研究小小兵/JSLibrary/AngularJS/example/js/controller.js",
+		"/C/Users/twiger/AppData/Roaming/Sublime Text 2/Packages/Sublime-HTMLPrettify-master/HTMLPrettify.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"owl-page",
+			"index",
+			"&",
+			"margin_left",
+			"margin)_eft",
+			"margin)left",
+			"list",
+			"tra",
+			"tranisi",
+			"href=\"download/",
+			"about",
+			"a href",
+			"target",
+			"alert",
+			"all_fact_list",
+			"comment",
+			"\">\n",
+			"fact",
+			"clear",
+			"editing",
+			"edit_idea",
+			"add_fact_to_idea",
+			"refresh_editing_idea",
+			"cite_num",
+			"negative",
+			"removeIdea",
+			"textarea",
+			"intersec",
+			"&n",
+			"intersection_facts",
+			"related",
+			"related_idea",
+			"related",
+			"related_ideas",
+			"related_idea",
+			"py:if",
+			"request.identity",
+			"hidden",
+			"hidden input",
+			"submit",
+			"submiy",
+			"upload",
+			"idea cards pool",
+			"idea pool",
+			"fact_cite_num",
+			"fact_tuple",
+			"fact_cite_num",
+			"fact_tuple",
+			"popup",
+			"add_fact_to_idea",
+			"select_fact_to_idea",
+			"add_fact_to_idea",
+			"modal",
+			"ERROR",
+			"rules",
+			"</span>\n",
+			"about\n",
+			">\n",
+			"se-pre-con",
+			"abstract",
+			"abstract description",
+			"homepage",
+			"console",
+			"DEPreLoad",
+			"\"content\"",
+			"semantic",
+			"what_is_TLBT_header",
+			"z-index",
+			"global.css",
+			"sticky_nav_width",
+			"article_content",
+			"span",
+			"ENGLISH",
+			"remove",
+			"right",
+			"master_menu",
+			"bordered inverted ",
+			"sticky_relocate",
+			"stick",
+			"blue",
+			"> ",
+			"https",
+			"sdk.js",
+			"id",
+			"interview",
+			"query_new_graph",
+			"last_clicked",
+			"query_new_graph",
+			"term_list",
+			"aler",
+			"query_new_graph",
+			"hierarchy",
+			"hieararchy",
+			"issue_form",
+			"jQuery(document).ready(function ($) {",
+			"jQuery(document).ready(function ($) {\njQuery(document).ready(function ($) {",
+			"suggest",
+			"issue_name",
+			"<i class=\"close icon\"></i>",
+			"load",
+			"ui-loader ",
+			"loading",
+			"oad",
+			"oading",
+			"next_id",
+			"article_id",
+			"/catering/article",
+			"catering_article",
+			"memory_correct_quantity",
+			"felt_difficult_type_quantity",
+			"item_correct_quantity",
+			"test_number",
+			"memory_correct_quantity",
+			"real_difficulty_quantity",
+			"img/profile/juice/",
+			"def run_script_on_file(self, temp_file_path):"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"href=\"download/forms/",
+			"download",
+			"a target=\"_blank\" href",
+			"<br/></span>",
+			"abstract description our_team_margin",
+			"\"image content\"",
+			"b",
+			"",
+			"http",
+			"",
+			"/article",
+			"article",
+			"data/article/img/catering_article_1/",
+			"data\\article\\img\\catering_article_1\\"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/P/turbogears/IdeaEditor/src/ideaeditor/templates/uploadIdea.html",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
