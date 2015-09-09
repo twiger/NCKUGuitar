@@ -41,6 +41,9 @@
                     $(".photo.slide").css("height", $(window).height());
                     $(".master.dark_bg.menu").hide();
 
+                    $(".master .menu > a").removeClass("active");
+                    $(".home.item").addClass("active");
+
                     $(".display_master_sidebar").click(function() {
                         $('.ui.sidebar').sidebar('toggle');
                     });

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script language="JavaScript" type="text/javascript" src="dist/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic/semantic.min.css">
+    <script src="dist/semantic/semantic.min.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="dist/owl.carousel.css">
+    <link rel="stylesheet" href="dist/owl.theme.css">
+    <script src="dist/owl.carousel.js"></script>
+    <script>
+    $(document)
+        .ready(function() {
+
+            var current_master = "transparent";
+
+            $.ajaxSetup({
+                cache: false
+            });
+
+            /* Laoding Animation */
+            /*
+            $(window).load(function() {
+                // Animate loader off screen
+                setTimeout(
+                    function() {
+                        //do something specials
+                        $(".se-pre-con").fadeOut("slow");
+                    }, 2000);
+            });
+            */
+
+            $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
+                $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
+
+                    $(".photo.slide").css("height", $(window).height());
+                    $(".master.dark_bg.menu").hide();
+
+                    $(".master .menu > a").removeClass("active");
+                    $(".about.item").addClass("active");
+
+                    $(".display_master_sidebar").click(function() {
+                        $('.ui.sidebar').sidebar('toggle');
+                    });
+
+                    $(window).bind('scroll', function() {
+                        var pos_y = window.pageYOffset || document.documentElement.scrollTop;
+                        // Master Menu BG Black
+                        if (pos_y > $(window).height() && current_master == "transparent") {
+                            $('.master.menu').css('display', "none");
+                            $('.master.dark_bg.menu').fadeIn();
+                            current_master = "dark_bg";
+                        } else if (pos_y < $(window).height() && current_master == "dark_bg") {
+                            $('.master.menu').css("display", "flex").hide().fadeIn();
+                            $('.master.dark_bg.menu').css('display', 'none');
+                            current_master = "transparent";
+                        }
+
+                    });
+
+                });
+            });
+
+
+
+
+
+
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="photo slide about-1-bg">
+        <div class="photo slide about-1">
+        </div>
+    </div>
+    <div id="master">
+    </div>
+    <div class="ui page grid">
+        <div class="row">
+            <div class="ui hidden master divider"></div>
+        </div>
+    </div>
+    <div id="main_content">
+        <div class="ui page grid">
+            <div class="computer only row">
+                <div class="column">
+                    <div class="ui hidden divider"></div>
+                    <h1 class="ui inverted centered alignment chi logo header">成大吉他社</h1>
+                    <h1 class="ui inverted centered alignment eng logo header">About NCKU Guitar Club</h1>
+                    <h4 class="ui inverted centered alignment  header">││</h4>
+                    <h1 class="ui inverted centered alignment header">成大人&nbsp;&nbsp;+&nbsp;&nbsp;吉他&nbsp;&nbsp;+&nbsp;&nbsp;熱愛音樂的心</h1>
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+            <div class="mobile only row">
+                <div class="column">
+                    <h1 class="ui inverted centered alignment chi logo header">成大吉他社</h1>
+                    <h1 class="ui inverted centered alignment eng logo header">NCKU Guitar Club</h1>
+                    <h4 class="ui inverted centered alignment  header">││</h4>
+                    <h1 class="ui inverted centered alignment header">成大人 & 吉他<br/>+<br/>熱愛音樂的心</h1>
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui raised very padded segment">
+                        <h1 class="ui dividing header">吉他社可以給你</h1>
+                        <div class="ui hidden divider"></div>
+                        <div class="ui stackable grid">
+                            <div class="row">
+                                <div class="six wide column">
+                                    <div class="ui animated ordered big list">
+                                        <div class="transition_blue item">
+                                            學習音樂的樂趣
+                                            <div class="ui hidden small divider"></div>
+                                        </div>
+                                        <div class="active transition_blue item">
+                                            彈奏吉他的技巧
+                                            <div class="ui hidden small divider"></div>
+                                        </div>
+                                        <div class="transition_blue item">
+                                            各種類行的音樂
+                                            <div class="ui hidden small divider"></div>
+                                        </div>
+                                        <div class="transition_blue item">
+                                            站上舞台的機會
+                                            <div class="ui hidden small divider"></div>
+                                        </div>
+                                    </div>
+                                    <p>學吉他是一件很麻煩的事情，你報了名，買了吉他和教材，然後開始上課，老師每次上課完都會給你一 ... 當你的手指長出繭後，手部的肌肉也更加有力，你就會開始享受到彈吉他的樂趣，別停下來，繼續下去，你可以走的更遠。</p>
+                                </div>
+                                <div class="ten wide column">
+                                    <img src="data/img/about/3.jpg" class="ui fluid rounded image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="double_divider_bg">
+                    <div class="double_divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h1 class="ui centered alignment dark_light_blue page logo header">吉他社的活動</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui raised very padded segment">
+                        <div class="ui internally celled stackable grid">
+                            <div class="row">
+                                <div class="eight wide column">1</div>
+                                <div class="eight wide column">2</div>
+                            </div>
+                            <div class="row">
+                                <div class="eight wide column">3</div>
+                                <div class="eight wide column">4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui page grid">
+        <div class="row">
+            <div class="ui hidden master divider"></div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+</html>
