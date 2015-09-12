@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script language="JavaScript" type="text/javascript" src="dist/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic/semantic.min.css">
+    <script src="dist/semantic/semantic.min.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="dist/owl.carousel.css">
+    <link rel="stylesheet" href="dist/owl.theme.css">
+    <script src="dist/owl.carousel.js"></script>
+    <script>
+    $(document)
+        .ready(function() {
+
+            var current_master = "transparent";
+
+            $.ajaxSetup({
+                cache: false
+            });
+
+            /* Laoding Animation */
+            /*
+            $(window).load(function() {
+                // Animate loader off screen
+                setTimeout(
+                    function() {
+                        //do something specials
+                        $(".se-pre-con").fadeOut("slow");
+                    }, 2000);
+            });
+            */
+
+            $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
+                $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
+
+                    $(".photo.slide").css("height", $(window).height());
+                    $(".master.dark_bg.menu").hide();
+
+                    $(".master .menu > a").removeClass("active");
+                    $(".flok_group.item").addClass("active");
+
+                    $(".display_master_sidebar").click(function() {
+                        $('.ui.sidebar').sidebar('toggle');
+                    });
+
+                    $(window).bind('scroll', function() {
+                        var pos_y = window.pageYOffset || document.documentElement.scrollTop;
+                        // Master Menu BG Black
+                        if (pos_y > $(window).height() && current_master == "transparent") {
+                            $('.master.menu').css('display', "none");
+                            $('.master.dark_bg.menu').fadeIn();
+                            current_master = "dark_bg";
+                        } else if (pos_y < $(window).height() && current_master == "dark_bg") {
+                            $('.master.menu').css("display", "flex").hide().fadeIn();
+                            $('.master.dark_bg.menu').css('display', 'none');
+                            current_master = "transparent";
+                        }
+
+                    });
+
+                });
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="photo slide flok_group-1-bg">
+        <div class="photo slide flok_group-1">
+        </div>
+    </div>
+    <div id="master">
+    </div>
+    <div class="ui page grid">
+        <div class="row">
+            <div class="ui hidden master divider"></div>
+        </div>
+    </div>
+    <div id="main_content">
+        <div class="ui page grid">
+            <div class="computer only row">
+                <div class="column">
+                    <div class="ui hidden large divider"></div>
+                    <div class="ui hidden large divider"></div>
+                    <h1 class="ui inverted centered alignment chi logo header">民謠團介紹</h1>
+                    <h1 class="ui inverted centered alignment eng logo header">想知道民謠團與吉他社的關係嗎 ? 快來看看 !</h1>
+                    <div class="ui hidden large divider"></div>
+                </div>
+            </div>
+            <div class="mobile only row">
+                <div class="column">
+                    <h1 class="ui inverted centered alignment chi logo header">民謠團介紹</h1>
+                    <h1 class="ui inverted centered alignment eng logo header">想知道民謠團與吉他社的關係嗎 ? 快來看看 !</h1>
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+            <div class="computer only row">
+                <div class="column">
+                    <div class="ui raised very padded segment">
+                        <h1 class="ui dividing header">成大吉他社架構圖</h1>
+                        <div class="ui hidden divider"></div>
+                        <div class="ui stackable grid">
+                            <div class="row">
+                                <div class="column">
+                                    <img src="data/img/flok_group/2.jpg" class="ui fluid rounded image">
+                                    <div class="ui hidden divider"></div>
+                                    <p class="description">民謠團為吉他社的核心幹部，在每一學期會徵選新民謠團團員進來培訓、磨練，之後在社內將擔任幹部及社師的職位。
+                                        <br/>不只在處理社務部分，民謠團團員會自由組團出去比賽、表演。
+                                        <br/>這裡，的確是有一群熱愛音樂的夥伴在等著你呢！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile only row">
+                <div class="column">
+                    <div class="ui raised segment">
+                        <h1 class="ui dividing header">成大吉他社架構圖</h1>
+                        <div class="ui hidden divider"></div>
+                        <div class="ui stackable grid">
+                            <div class="row">
+                                <div class="column">
+                                    <img src="data/img/flok_group/2.jpg" class="ui fluid rounded image">
+                                    <div class="ui hidden divider"></div>
+                                    <p class="description">民謠團為吉他社的核心幹部，在每一學期會徵選新民謠團團員進來培訓、磨練，之後在社內將擔任幹部及社師的職位。
+                                        <br/>不只在處理社務部分，民謠團團員會自由組團出去比賽、表演。
+                                        <br/>這裡，的確是有一群熱愛音樂的夥伴在等著你呢！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui page page history grid">
+            <div class="row">
+                <div class="column">
+                    <h1 class="ui page logo header">
+                    <div class="content">
+                        <div class="ui hidden divider"></div>
+                        歷史沿革│
+                    </div>
+                </h1>
+                </div>
+            </div>
+            <div class="computer only row">
+                <div class="column">
+                    <div class="ui basic segment">
+                        <p class="description">由於時間過於久遠，未詳細記載，吉他社的歷史從何而起，難以考證。
+                            <br/> 只是據說以前吉他社出去外面表演的人都是由最強的人來擔綱，
+                            <br/> 而改成現在這種徵選新人進來訓練是從民國 86 年開始的，
+                            <br/> 那是第一次的民謠團徵選，至今已有 20 年之久。
+                            <br/> 在這段期間，民謠團人數漸多，實力也更加堅強。
+                        </p>
+                        <p class="description">
+                            雖然無法確切知道吉他社開始的時間，
+                            <br/> 不過在夢之大地吉他社版上，翻開第一頁即為這樣的一段話
+                        </p>
+                        <p class="description teal margin top left">
+                            這世界是如此喧囂，讓沉默得人顯得有點傻，
+                            <br/> 這些人不能小看呀，如果你給他一把吉他。
+                        </p>
+                        <p class="description teal margin bottom right">
+                            李宗盛 / 世界如此喧嘩
+                        </p>
+                        <p class="description">
+                            不管時間如何變遷，我們，也許我們，就是這樣用吉他、用音樂在說故事的一群人吧。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile only row">
+                <div class="column">
+                    <div>
+                        <p class="description">由於時間過於久遠，未詳細記載，吉他社的歷史從何而起，難以考證。
+                            <br/> 只是據說以前吉他社出去外面表演的人都是由最強的人來擔綱，而改成現在這種徵選新人進來訓練是從民國 86 年開始的，那是第一次的民謠團徵選，至今已有 20 年之久。
+                            <br/> 在這段期間，民謠團人數漸多，實力也更加堅強。
+                        </p>
+                        <p class="description">
+                            雖然無法確切知道吉他社開始的時間，不過在夢之大地吉他社版上，翻開第一頁即為這樣的一段話
+                        </p>
+                        <p class="description teal">
+                            這世界是如此喧囂，讓沉默得人顯得有點傻，
+                            <br/> 這些人不能小看呀，如果你給他一把吉他。
+                        </p>
+                        <p class="description teal margin center">
+                            李宗盛 / 世界如此喧嘩
+                        </p>
+                        <p class="description">
+                            不管時間如何變遷，我們，也許我們，就是這樣用吉他、用音樂在說故事的一群人吧。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui hidden large divider"></div>
+        </div>
+    </div>
+    <div class="ui page light_blue center aligned page stackable grid">
+        <div class="row">
+            <div class="column">
+                <div class="ui hidden divider"></div>
+                <h1 class="ui centered alignment inverted page logo header">
+                    <div class="content">
+                        熱門歌曲
+                        <div class="page sub header">
+                            來聽聽我們用吉他說的故事吧！
+                        </div>
+                    </div>
+                </h1>
+                <div class="ui hidden divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                
+            </div>
+        </div>
+        <div class="ui hidden divider"></div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+</html>

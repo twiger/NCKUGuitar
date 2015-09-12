@@ -16,11 +16,19 @@ body {
     margin: 3rem 0rem !important;
 }
 
+.description {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+
 /* Override Semantic Ui Element */
 
-i.inverted.bordered.green.icon, i.inverted.circular.green.icon{
+i.inverted.bordered.green.icon,
+i.inverted.circular.green.icon {
     background-color: #15c671!important;
 }
+
 
 /* Master */
 
@@ -110,8 +118,8 @@ i.inverted.bordered.green.icon, i.inverted.circular.green.icon{
 
 /* About Page */
 
-.page.sub.header{
-    color:rgba(255,255,255,.95) !important;
+.page.sub.header {
+    color: rgba(255, 255, 255, .95) !important;
     font-size: 1.5rem !important;
 }
 
@@ -204,4 +212,59 @@ h1.page.logo.header {
     margin-right: 17%;
     font-size: 1.2rem;
     line-height: 2rem;
+}
+
+
+/* Flok Group */
+
+.slide.flok_group-1-bg {
+    background: url("../data/img/flok_group/1.jpg") 0% 60% / cover no-repeat;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+}
+
+.slide.flok_group-1 {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: absolute;
+}
+
+.flok_group-1 > p > span.photo_font {
+    color: aliceblue;
+    float: right;
+    margin-top: 15%;
+    margin-right: 17%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.ui.page.page.history.grid {
+    margin: 1rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 880px) {
+    p.description.teal.margin.center{
+        margin-left: 2rem;
+    }
+}
+
+p.description.teal {
+    color: #21A1E0;
+}
+
+p.description.teal.margin.left.top {
+    margin-left: 12rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+p.description.teal.margin.right.bottom {
+    margin-left: 34rem;
+    margin-right: 5rem;
+}
+
+#music_video{
+    width:100%;
 }
