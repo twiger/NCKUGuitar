@@ -4,10 +4,23 @@
     width: 100% !important;
 }
 
-body{
+body {
     background-color: #F5F5F5;
 }
 
+.ui.hidden.narrow.divider {
+    margin-bottom: 0rem;
+}
+
+.ui.large.hidden.divider {
+    margin: 3rem 0rem !important;
+}
+
+/* Override Semantic Ui Element */
+
+i.inverted.bordered.green.icon, i.inverted.circular.green.icon{
+    background-color: #15c671!important;
+}
 
 /* Master */
 
@@ -97,6 +110,29 @@ body{
 
 /* About Page */
 
+.page.sub.header{
+    color:rgba(255,255,255,.95) !important;
+    font-size: 1.5rem !important;
+}
+
+.ui.page.light_blue.grid {
+    background-color: #9DD4D1;
+}
+
+.list.segment {
+    text-align: left;
+    margin: 0rem 4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 880px) {
+    .list.segment {
+        text-align: left;
+        margin: 0rem 0rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
 .double_divider {
     height: 0.5rem;
     width: 100%;
@@ -112,7 +148,6 @@ body{
 
 .transition_blue.item.active {
     font-weight: 800;
-
 }
 
 .transition_blue.item {
@@ -129,45 +164,37 @@ body{
     border-color: #90B0BA !important;
 }
 
-.dark_light_blue{
-    color:#7d9aa3 !important;
+.dark_light_blue {
+    color: #7d9aa3 !important;
 }
 
-.img_article_header{
-    background: url("../data/img/about/4.jpg");
-    background-size: cover;
-    margin:-3rem;
-    height:auto;
+.ui.hidden.master.divider {
+    margin: 3.5rem;
 }
 
-
-.ui.hidden.master.divider{
-    margin:3.5rem;
-}
-
-h1.chi.logo.header{
+h1.chi.logo.header {
     font-size: -webkit-xxx-large;
 }
 
-h1.eng.logo.header{
-    color:rgba(255,255,255,0.85);
+h1.eng.logo.header {
+    color: rgba(255, 255, 255, 0.85);
 }
 
-h1.page.logo.header{
+h1.page.logo.header {
     font-size: 3rem;
 }
 
 .slide.about-1-bg {
     background: url("../data/img/about/2.jpg") 0% 25% / cover no-repeat;
-    width:100%;
-    position:absolute;
+    width: 100%;
+    position: absolute;
     z-index: -100;
 }
 
 .slide.about-1 {
     background: rgba(0, 0, 0, 0.1);
-    width:100%;
-    position:absolute;
+    width: 100%;
+    position: absolute;
 }
 
 .about-1 > p > span.photo_font {
