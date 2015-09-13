@@ -29,6 +29,10 @@ i.inverted.circular.green.icon {
     background-color: #15c671!important;
 }
 
+.ui.embed{
+    max-width: 99.9%;
+}
+
 
 /* Master */
 
@@ -267,4 +271,12 @@ p.description.teal.margin.right.bottom {
 
 #music_video{
     width:100%;
+}
+
+.embed.video{
+    display:none;
+}
+
+.embed.video.display{
+    display:block;
 }
