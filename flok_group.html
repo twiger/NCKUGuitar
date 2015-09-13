@@ -69,6 +69,7 @@
                     $('.ui.dropdown').dropdown();
 
                     $('.video.menu > .item').click(function() {
+                        $('.' + current_video + '.embed.video').embed("destroy");
                         current_video = $(this).attr('id');
                         $('.embed.video').removeClass('display');
                         $('.' + current_video + '.embed.video').embed();
