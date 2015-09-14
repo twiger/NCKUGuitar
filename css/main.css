@@ -29,8 +29,21 @@ i.inverted.circular.green.icon {
     background-color: #15c671!important;
 }
 
-.ui.embed{
+.ui.embed {
     max-width: 99.9%;
+}
+
+.ui.vertical.inverted.menu .menu .item,
+.ui.vertical.inverted.menu .menu .active .item {
+    color:rgba(255,255,255,.9) !important;
+}
+
+.video.menu.inverted.transparent_bg > a > span{
+    color:rgba(255,255,255,.9) !important;
+}
+
+.ui.menu .ui.dropdown .menu>.active.item{
+    color:rgba(255,255,255,.95)!important;
 }
 
 
@@ -249,7 +262,7 @@ h1.page.logo.header {
 }
 
 @media (max-width: 880px) {
-    p.description.teal.margin.center{
+    p.description.teal.margin.center {
         margin-left: 2rem;
     }
 }
@@ -269,14 +282,63 @@ p.description.teal.margin.right.bottom {
     margin-right: 5rem;
 }
 
-#music_video{
-    width:100%;
+#music_video {
+    width: 100%;
 }
 
-.embed.video{
-    display:none;
+.embed.video {
+    display: none;
 }
 
-.embed.video.display{
-    display:block;
+.embed.video.display {
+    display: block;
+}
+
+.ui.page.video.grid {
+    background-color: #bfbbbb;
+    background: url("../data/img/flok_group/3.jpg") 0% 46% / cover no-repeat;
+}
+
+.inverted.transparent_bg {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.video.menu.inverted.transparent_bg {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.video.menu.inverted.transparent_bg > a {
+    color: white !important;
+}
+
+
+/* Registration Page */
+
+.slide.registration-1-bg {
+    background: url("../data/img/registration/1.jpg") 0% 60% / cover no-repeat;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+}
+
+.slide.registration-1 {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: absolute;
+}
+
+.registration-1 > p > span.photo_font {
+    color: aliceblue;
+    float: right;
+    margin-top: 15%;
+    margin-right: 17%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.resize_google_form {
+    margin: -1rem !important;
+    width: 105% !important;
+    max-width: inherit !important;
+    max-height: inherit !important;
 }
