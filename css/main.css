@@ -35,17 +35,20 @@ i.inverted.circular.green.icon {
 
 .ui.vertical.inverted.menu .menu .item,
 .ui.vertical.inverted.menu .menu .active .item {
-    color:rgba(255,255,255,.9) !important;
+    color: rgba(255, 255, 255, .9) !important;
 }
 
-.video.menu.inverted.transparent_bg > a > span{
-    color:rgba(255,255,255,.9) !important;
+.video.menu.inverted.transparent_bg > a > span {
+    color: rgba(255, 255, 255, .9) !important;
 }
 
-.ui.menu .ui.dropdown .menu>.active.item{
-    color:rgba(255,255,255,.95)!important;
+.ui.menu .ui.dropdown .menu>.active.item {
+    color: rgba(255, 255, 255, .95)!important;
 }
 
+.ui.secondary.vertical.pointing.menu .item{
+    color:rgba(255,255,255,0.85);
+}
 
 /* Master */
 
@@ -235,10 +238,19 @@ h1.page.logo.header {
 /* Flok Group */
 
 .slide.flok_group-1-bg {
-    background: url("../data/img/flok_group/1.jpg") 0% 60% / cover no-repeat;
+    background: url("../data/img/flok_group/1.jpg") 0% 0% / cover no-repeat;
     width: 100%;
     position: absolute;
     z-index: -100;
+}
+
+@media (max-width: 880px) {
+    .slide.flok_group-1-bg {
+        background: url("../data/img/flok_group/1.jpg") 11% 0% / cover no-repeat;
+        width: 100%;
+        position: absolute;
+        z-index: -100;
+    }
 }
 
 .slide.flok_group-1 {
