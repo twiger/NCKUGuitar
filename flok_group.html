@@ -25,7 +25,7 @@
             });
 
             /* Laoding Animation */
-            /*
+            
             $(window).load(function() {
                 // Animate loader off screen
                 setTimeout(
@@ -34,7 +34,7 @@
                         $(".se-pre-con").fadeOut("slow");
                     }, 2000);
             });
-            */
+            
 
             $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
@@ -86,6 +86,7 @@
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
     <div class="photo slide flok_group-1-bg">
         <div class="photo slide flok_group-1">
         </div>
