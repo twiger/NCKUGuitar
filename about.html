@@ -24,16 +24,16 @@
             });
 
             /* Laoding Animation */
-            
+
             $(window).load(function() {
                 // Animate loader off screen
                 setTimeout(
                     function() {
                         //do something specials
                         $(".se-pre-con").fadeOut("slow");
-                    }, 2000);
+                    }, 500);
             });
-            
+
 
             $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
@@ -122,22 +122,31 @@
                                     <div class="ui animated ordered big list">
                                         <div class="transition_blue item">
                                             學習音樂的樂趣
+                                            <p class="small description">
+                                                體驗吉他的魅力，讓音樂豐富生活
+                                            </p>
                                             <div class="ui hidden small divider"></div>
                                         </div>
-                                        <div class="active transition_blue item">
+                                        <div class="transition_blue item">
                                             彈奏吉他的技巧
+                                            <p class="small description">
+                                                從基礎到進階，再從進階到彈唱與指彈
+                                            </p>
                                             <div class="ui hidden small divider"></div>
                                         </div>
                                         <div class="transition_blue item">
                                             各種類行的音樂
-                                            <div class="ui hidden small divider"></div>
+                                            <p class="small description">
+                                                slow soul、slow rock、finger style⋯⋯一琴在手，變化無窮
+                                            </p>
                                         </div>
                                         <div class="transition_blue item">
                                             站上舞台的機會
-                                            <div class="ui hidden small divider"></div>
+                                            <p class="small description">
+                                                期末成發讓每個班級都有上台展現成果的機會
+                                            </p>
                                         </div>
                                     </div>
-                                    <p>學吉他是一件很麻煩的事情，你報了名，買了吉他和教材，然後開始上課，老師每次上課完都會給你一 ... 當你的手指長出繭後，手部的肌肉也更加有力，你就會開始享受到彈吉他的樂趣，別停下來，繼續下去，你可以走的更遠。</p>
                                 </div>
                                 <div class="ten wide column">
                                     <img src="data/img/about/3.jpg" class="ui fluid rounded image">

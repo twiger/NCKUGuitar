@@ -21,6 +21,11 @@ body {
     line-height: 3rem;
 }
 
+.small.description {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
 /* Loading Animation */
 .no-js #loader {
     display: none;
