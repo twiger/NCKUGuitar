@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script language="JavaScript" type="text/javascript" src="dist/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic/semantic.min.css">
+    <script src="dist/semantic/semantic.min.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="dist/owl.carousel.css">
+    <link rel="stylesheet" href="dist/owl.theme.css">
+    <script src="dist/owl.carousel.js"></script>
+    <script>
+    $(document)
+        .ready(function() {
+
+            var current_master = "transparent";
+
+            $.ajaxSetup({
+                cache: false
+            });
+
+            /* Laoding Animation */
+
+            $(window).load(function() {
+                // Animate loader off screen
+                setTimeout(
+                    function() {
+                        //do something specials
+                        $(".se-pre-con").fadeOut("slow");
+                    }, 500);
+            });
+
+
+            $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
+                $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
+
+                    $(".photo.slide").css("height", $(window).height());
+                    $(".master.dark_bg.menu").hide();
+
+                    $(".master .menu > a").removeClass("active");
+                    $(".about.item").addClass("active");
+
+                    $(".display_master_sidebar").click(function() {
+                        $('.ui.sidebar').sidebar('toggle');
+                    });
+
+                    if ($(document).width() < 880) {
+                        $('.ui.modal>.content>.image').css("width", "25%");
+                        $('.ui.modal>.content>.description').css("width", "75%");
+                    }
+
+                    $(window).bind('scroll', function() {
+                        var pos_y = window.pageYOffset || document.documentElement.scrollTop;
+                        // Master Menu BG Black
+                        if (pos_y > $(window).height() && current_master == "transparent") {
+                            $('.master.menu').css('display', "none");
+                            $('.master.dark_bg.menu').fadeIn();
+                            current_master = "dark_bg";
+                        } else if (pos_y < $(window).height() && current_master == "dark_bg") {
+                            $('.master.menu').css("display", "flex").hide().fadeIn();
+                            $('.master.dark_bg.menu').css('display', 'none');
+                            current_master = "transparent";
+                        }
+
+                    });
+
+                    $("#a_class").click(function() {
+                        $(".a_class").modal({
+                                blurring: true
+                            })
+                            .modal('setting', 'transition', 'fade up')
+                            .modal('show');
+                    });
+
+                    $("#b_class").click(function() {
+                        $(".b_class").modal({
+                                blurring: true
+                            })
+                            .modal('setting', 'transition', 'fade up')
+                            .modal('show');
+                    });
+
+                });
+            });
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+    <div class="photo slide course-1-bg">
+        <div class="photo slide course-1">
+        </div>
+    </div>
+    <div id="master">
+    </div>
+    <div class="ui page grid">
+        <div class="row">
+            <div class="ui hidden master divider"></div>
+        </div>
+    </div>
+    <div id="main_content">
+        <div class="ui page grid">
+            <div class="computer only row">
+                <div class="column">
+                    <div class="ui hidden divider"></div>
+                    <h1 class="ui inverted centered alignment chi logo header">社課資訊</h1>
+                    <h1 class="ui inverted centered alignment eng logo header">About Class Information</h1>
+                    <div class="ui hidden divider"></div>
+                    <h1 class="ui inverted centered alignment header">加入吉他社，多采多姿的社課正等著你來挖寶呢</h1>
+                    <div class="ui hidden large divider"></div>
+                </div>
+            </div>
+            <div class="mobile only row">
+                <div class="column">
+                    <h1 class="ui inverted centered alignment chi logo header">社課資訊</h1>
+                    <h1 class="ui inverted centered alignment eng logo header">About Class Information</h1>
+                    <h1 class="ui inverted centered alignment header">加入吉他社，多采多姿的社課正等著你來挖寶呢</h1>
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <table class="ui unstackable very padded celled structured table">
+                        <thead>
+                            <tr class="center aligned">
+                                <th colspan="6">
+                                    <h3 class="ui header">成大吉他社 - 社課課表</h3>
+                                </th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr class="head center aligned">
+                                <th>TIME</th>
+                                <th>MON</th>
+                                <th>TUE</th>
+                                <th>WED</th>
+                                <th>THU</th>
+                                <th>FRI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="center aligned">
+                                <td>
+                                    <h5>18:30 - 19:30</h5>
+                                </td>
+                                <td>
+                                    <h4 class="ui header">彈唱班<div class="sub header"><br/>(大琴室)</div></h4>
+                                </td>
+                                <td>
+                                    <h4 class="ui header">團練時間</h4>
+                                </td>
+                                <td rowspan="3">
+                                    <h4>民</h4>
+                                    <h4>謠</h4>
+                                    <h4>團</h4>
+                                    <h4>之</h4>
+                                    <h4>夜</h4>
+                                </td>
+                                <td>
+                                    <h4 class="ui header">指彈班<div class="sub header"><br/>(大琴室)</div></h4>
+                                </td>
+                                <td rowspan="3">
+                                    <h4>團</h4>
+                                    <h4>練</h4>
+                                    <h4>之</h4>
+                                    <h4>夜</h4>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td>
+                                    <h5>19:30 - 20:00</h5>
+                                </td>
+                                <td colspan="2">
+                                    <h4 class="ui header">團練時間</h4>
+                                </td>
+                                <td>
+                                    <h5>團練時間</h5>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td>
+                                    <h5>20:00 - 21:00</h5>
+                                </td>
+                                <td>
+                                    <h4 class="ui header">進階班<div class="sub header"><br/>(大琴室)</div></h4>
+                                </td>
+                                <td>
+                                    <h4 class="ui header">初級 B 班<div class="sub header"><br/>(大琴室)</div></h4>
+                                </td>
+                                <td>
+                                    <h4 class="ui header">初級 A 班<div class="sub header"><br/>(大琴室)</div></h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="double_divider_bg">
+                    <div class="double_divider"></div>
+                </div>
+            </div>-->
+            <div class="row">
+                <div class="column">
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h1 class="ui centered alignment dark_light_blue page logo header">社課介紹</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="double_divider_bg">
+                    <div class="double_divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui raised very padded segment">
+                        <div class="ui internally celled stackable very relaxed grid">
+                            <div class="row">
+                                <div id="a_class" class="eight wide center aligned column">
+                                    <h2 class="ui icon header">
+                                        <img src="data/img/course/潘巧思.jpg" class="ui circular centered small image" />
+                                        <div class="content">
+                                            <div class="ui hidden divider"></div>
+                                            初級 A 班
+                                        </div>
+                                    </h2>
+                                    <div class="list segment">
+                                        <p class="line-3 small description">
+                                            從最基礎的和絃、概念…等教起，以每堂課學一首新歌為目標，希望期末大家都能開心帥帥自彈自唱~~
+                                        </p>
+                                    </div>
+                                    <div class="ui a_class modal">
+                                        <i class="close icon"></i>
+                                        <div class="content">
+                                            <div class="ui stackable grid">
+                                                <div class="row">
+                                                    <div class="four wide column">
+                                                        <img src="data/img/course/潘巧思.jpg" class="ui circular centered fluid image" />
+                                                    </div>
+                                                    <div class="twelve wide column">
+                                                        <h3 class="ui dividing header">
+                                                        <span class="role_in_modal">初級 A 班</span>&nbsp;&nbsp;&nbsp;&nbsp;每周四 晚上 8:00 - 9:00
+                                                        <div class="sub header"><a class="fb_link" href="https://www.facebook.com/profile.php?id=100000292401500&fref=ts">https://www.facebook.com/profile.php?id=100000292401500&fref=ts</a></div>
+                                                        </h3>
+                                                        <p class="small description">
+                                                            從最基礎的和絃、概念…等教起，以每堂課學一首新歌為目標，希望期末大家都能開心帥帥自彈自唱~~
+                                                        </p>
+                                                        <h4 class="ui no_margin_bottom blue header">教學團隊：</h4>
+                                                        <p class="small description">
+                                                            社師 - 潘巧思&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 助教 - 黃佳惠、黃聖心、邱雅萍、楊宗霖
+                                                        </p>
+                                                        <h4 class="ui blue header">授課內容：</h4>
+                                                        <ol class="ui modal_list list">
+                                                            <li>基礎和弦</li>
+                                                            <li>簡單樂理</li>
+                                                            <li>基本節奏的刷法與指彈</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="b_class" class="eight wide center aligned column">
+                                    <h2 class="ui icon header">
+                                        <img src="data/img/course/許奕融.jpg" class="ui circular centered small image" />
+                                        <div class="content">
+                                            <div class="ui hidden divider"></div>
+                                            初級 B 班
+                                        </div>
+                                    </h2>
+                                    <div class="list segment">
+                                        <p class="line-3 small description">
+                                            每堂課基本上會教一個技巧或一些新和弦，搭配歌曲一起在課堂上練習，希望大家上完一個學期的初B班後都，可以簡單運用以上技巧，完整自彈自唱一首歌。
+                                        </p>
+                                    </div>
+                                    <div class="ui b_class modal">
+                                        <i class="close icon"></i>
+                                        <div class="content">
+                                            <div class="ui stackable grid">
+                                                <div class="row">
+                                                    <div class="four wide column">
+                                                        <img src="data/img/course/許奕融.jpg" class="ui circular centered fluid image" />
+                                                    </div>
+                                                    <div class="twelve wide column">
+                                                        <h3 class="ui dividing header">
+                                                        <span class="role_in_modal">初級 B 班</span>&nbsp;&nbsp;&nbsp;&nbsp;每周二 晚上 8:00 - 9:00
+                                                        <div class="sub header"><a class="fb_link" href="https://www.facebook.com/profile.php?id=100002569629535&fref=ts">https://www.facebook.com/profile.php?id=100002569629535&fref=ts</a></div>
+                                                        </h3>
+                                                        <p class="small description">
+                                                            每堂課基本上會教一個技巧或一些新和弦，搭配歌曲一起在課堂上練習，希望大家上完一個學期的初B班後都，可以簡單運用以上技巧，完整自彈自唱一首歌。
+                                                        </p>
+                                                        <h4 class="ui no_margin_bottom blue header">教學團隊：</h4>
+                                                        <p class="small description">
+                                                            社師 - 許奕融&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 助教 - 洪毓陽、洪迎禎、蘇逸芸、陳禹杰
+                                                        </p>
+                                                        <h4 class="ui blue header">授課內容：</h4>
+                                                        <ol class="ui modal_list list">
+                                                            <li>吉他簡介 (種類與構造)</li>
+                                                            <li>常用和弦 (如C大調的和弦)</li>
+                                                            <li>刷法 (slow soul、四拍子刷法)</li>
+                                                            <li>入門右手指法 </li>
+                                                            <li>簡單音階和pick使用(C大調Mi型音階)</li>
+                                                            <li>歌曲練習</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="eight wide center aligned column">
+                                    <h2 class="ui icon header">
+                                        <img src="data/img/about/民歌賽.jpg" class="ui circular centered small image" />
+                                        <div class="content">
+                                            <div class="ui hidden divider"></div>
+                                            成大民歌賽
+                                        </div>
+                                    </h2>
+                                    <div class="list segment">
+                                        <ol class="ui large list">
+                                            <li>下學期舉辦 分成初賽、複賽</li>
+                                            <li>歡迎成大所有師生參加</li>
+                                            <li>不只民歌，任何曲風及樂器均可</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="eight wide center aligned column">
+                                    <h2 class="ui icon header">
+                                        <img src="data/img/about/期末成發.jpg" class="ui circular centered small image" />
+                                        <div class="content">
+                                            <div class="ui hidden divider"></div>
+                                            吉他社期末成發
+                                        </div>
+                                    </h2>
+                                    <div class="list segment">
+                                        <ol class="ui large list">
+                                            <li>各學期末舉辦</li>
+                                            <li>吉他社內各班級的成果展現</li>
+                                            <li>大合刷、FingerStyle、民謠團歌</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui large hidden divider"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui page light_blue center aligned page stackable grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui hidden divider"></div>
+                    <h1 class="ui centered alignment inverted  header">
+                    <div class="content">
+                        誠摯的邀請你加入吉他社，只要是社員任何課程都可以去喔！
+                    </div>
+                </h1>
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+            <div class="ui hidden divider"></div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+</html>

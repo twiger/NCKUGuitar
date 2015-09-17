@@ -26,7 +26,35 @@ body {
     line-height: 2rem;
 }
 
+p.line-3.small.description {
+    height: 6rem !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.role_in_modal {
+    color: lightseagreen;
+}
+
+.fb_link {
+    color: currentColor;
+}
+
+span.floating.right {
+    color: teal;
+    float: right;
+}
+
+ol.ui.modal_list.list {
+    font-size: 1rem;
+}
+
+
 /* Loading Animation */
+
 .no-js #loader {
     display: none;
 }
@@ -73,9 +101,10 @@ i.inverted.circular.green.icon {
     color: rgba(255, 255, 255, .95)!important;
 }
 
-.ui.secondary.vertical.pointing.menu .item{
-    color:rgba(255,255,255,0.85);
+.ui.secondary.vertical.pointing.menu .item {
+    color: rgba(255, 255, 255, 0.85);
 }
+
 
 /* Master */
 
@@ -260,6 +289,41 @@ h1.page.logo.header {
     font-size: 1.2rem;
     line-height: 2rem;
 }
+
+
+/* Course Page */
+
+.slide.course-1-bg {
+    background: url("../data/img/course/1.jpg") 0% 31% / cover no-repeat;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+}
+
+.slide.course-1 {
+    background: rgba(0, 0, 0, 0.13);
+    width: 100%;
+    position: absolute;
+}
+
+table.ui.very.padded.celled.structured.table {
+    box-shadow: 0px 2px 8px lightgrey;
+}
+
+h4.ui.blue.no_margin_bottom.header {
+    margin-bottom: 0rem;
+}
+
+/*
+@media (max-width: 880px) {
+    .ui.modal>.content>.image {
+        width: 25% !important;
+    }
+    .ui.modal>.content>.description {
+        width: 75% !important;
+    }
+}
+*/
 
 
 /* Flok Group */
