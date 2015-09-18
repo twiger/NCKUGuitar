@@ -12,6 +12,10 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="dist/owl.carousel.css">
     <link rel="stylesheet" href="dist/owl.theme.css">
+    <link href="dist/textillate/animate.css" rel="stylesheet">
+    <script src="dist/textillate/jquery.fittext.js"></script>
+    <script src="dist/textillate/jquery.lettering.js"></script>
+    <script src="dist/textillate/jquery.textillate.js"></script>
     <script src="dist/owl.carousel.js"></script>
     <script>
     $(document)
@@ -24,7 +28,7 @@
             });
 
             /* Laoding Animation */
-            
+
             $(window).load(function() {
                 // Animate loader off screen
                 setTimeout(
@@ -33,7 +37,7 @@
                         $(".se-pre-con").fadeOut("slow");
                     }, 2000);
             });
-            
+
 
             $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
@@ -52,27 +56,58 @@
                         var pos_y = window.pageYOffset || document.documentElement.scrollTop;
                         // Master Menu BG Black
                         if (pos_y > $(window).height() && current_master == "transparent") {
-                            $('.master.menu').css('display',"none");
+                            $('.master.menu').css('display', "none");
                             $('.master.dark_bg.menu').fadeIn();
                             current_master = "dark_bg";
-                        } 
-                        else if (pos_y < $(window).height() && current_master == "dark_bg"){
+                        } else if (pos_y < $(window).height() && current_master == "dark_bg") {
                             $('.master.menu').css("display", "flex").hide().fadeIn();
-                            $('.master.dark_bg.menu').css('display','none');
+                            $('.master.dark_bg.menu').css('display', 'none');
                             current_master = "transparent";
                         }
 
                     });
 
+                    /* Slide & Text Animation */
+                    var slide_num = 1;
+
+                    $('.home-' + slide_num + ' > p > span.photo_font > .text_fadeIn')
+                        .textillate({
+                            initialDelay: 1000,
+                            in : {
+                                effect: 'flipInX'
+                            }
+                        });
+
+                    setInterval(
+                        function() {
+                            $("#owl-carousel").trigger('owl.next');
+
+                            slide_num = slide_num + 1;
+
+                            $('.home-' + slide_num + ' > p > span.photo_font > .text_fadeIn')
+                                .textillate({
+                                    initialDelay: 500,
+                                    in : {
+                                        effect: 'flipInX'
+                                    }
+                                });
+                            if (slide_num == 4) {
+                                slide_num = 0;
+                            }
+
+                        }, 6000);
+
                 });
             });
 
             $("#owl-carousel").owlCarousel({
-                autoPlay: 6000,
+                //autoPlay: 6000,
                 slideSpeed: 1000,
                 lazyLoad: true,
                 singleItem: true,
                 rewindSpeed: 0,
+                mouseDrag: false,
+                touchDrag: false,
 
             });
 
@@ -98,68 +133,40 @@
                         <div class="photo slide home-1">
                             <p>
                                 <span class="photo_font">
-                                曾經，你我都有過這樣的憧憬：<br/>獨自坐在高腳椅上，鎂光燈聚焦在身上，<br/>抱著吉他，抒情的旋律緩緩流瀉……。</span>
+                                <span class="text_fadeIn">曾經，你我都有過這樣的憧憬：</span>
+                                <br/><span class="text_fadeIn">獨自坐在高腳椅上，鎂光燈聚焦在身上，</span>
+                                <br/><span class="text_fadeIn">抱著吉他，抒情的旋律緩緩流瀉……。</span></span>
                             </p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="photo slide home-2">
-                            <!--
-                            <div class="ui slide page grid">
-                                <div class="row">
-                                    <div class="column">
-                                        <h4 class="ui worker margin right aligned inverted header">
-                                                你知道一棟房子是怎麼蓋出來的嗎？<br/><br/>
-                                                建築工人，是工地裡最前線的作業人員。<br/>
-                                                通常都是體力吃重的工作，所以大多數也都是男性為主。<br/>
-                                                裡面還包含了許多不同的技術，<br/>
-                                                像是灌水泥、燒焊、木工、電工等。<br/><br/>
-                                                這些人的體力和技術組合成一棟棟新穎的樓房。
-                                            </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            -->
+                            <p>
+                                <span class="photo_font">
+                                <span class="text_fadeIn">曾經，你我都有過這樣的憧憬：</span>
+                                <br/><span class="text_fadeIn">獨自坐在高腳椅上，鎂光燈聚焦在身上，</span>
+                                <br/><span class="text_fadeIn">抱著吉他，抒情的旋律緩緩流瀉……。</span></span>
+                            </p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="photo slide home-3">
-                            <!--
-                            <div class="ui slide page grid">
-                                <div class="row">
-                                    <div class="column">
-                                        <h4 class="ui worker margin right aligned inverted header">
-                                                你知道一棟房子是怎麼蓋出來的嗎？<br/><br/>
-                                                建築工人，是工地裡最前線的作業人員。<br/>
-                                                通常都是體力吃重的工作，所以大多數也都是男性為主。<br/>
-                                                裡面還包含了許多不同的技術，<br/>
-                                                像是灌水泥、燒焊、木工、電工等。<br/><br/>
-                                                這些人的體力和技術組合成一棟棟新穎的樓房。
-                                            </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            -->
+                            <p>
+                                <span class="photo_font">
+                                <span class="text_fadeIn">曾經，你我都有過這樣的憧憬：</span>
+                                <br/><span class="text_fadeIn">獨自坐在高腳椅上，鎂光燈聚焦在身上，</span>
+                                <br/><span class="text_fadeIn">抱著吉他，抒情的旋律緩緩流瀉……。</span></span>
+                            </p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="photo slide home-4">
-                            <!--
-                            <div class="ui slide page grid">
-                                <div class="row">
-                                    <div class="column">
-                                        <h4 class="ui worker margin right aligned inverted header">
-                                                你知道一棟房子是怎麼蓋出來的嗎？<br/><br/>
-                                                建築工人，是工地裡最前線的作業人員。<br/>
-                                                通常都是體力吃重的工作，所以大多數也都是男性為主。<br/>
-                                                裡面還包含了許多不同的技術，<br/>
-                                                像是灌水泥、燒焊、木工、電工等。<br/><br/>
-                                                這些人的體力和技術組合成一棟棟新穎的樓房。
-                                            </h4>
-                                    </div>
-                                </div>
-                            </div>
-                            -->
+                            <p>
+                                <span class="photo_font">
+                                <span class="text_fadeIn">曾經，你我都有過這樣的憧憬：</span>
+                                <br/><span class="text_fadeIn">獨自坐在高腳椅上，鎂光燈聚焦在身上，</span>
+                                <br/><span class="text_fadeIn">抱著吉他，抒情的旋律緩緩流瀉……。</span></span>
+                            </p>
                         </div>
                     </div>
                 </div>

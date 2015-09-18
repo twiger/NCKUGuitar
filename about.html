@@ -12,8 +12,13 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="dist/owl.carousel.css">
     <link rel="stylesheet" href="dist/owl.theme.css">
+    <link href="dist/textillate/animate.css" rel="stylesheet">
+    <script src="dist/textillate/jquery.fittext.js"></script>
+    <script src="dist/textillate/jquery.lettering.js"></script>
+    <script src="dist/textillate/jquery.textillate.js"></script>
     <script src="dist/owl.carousel.js"></script>
     <script>
+
     $(document)
         .ready(function() {
 
@@ -63,11 +68,43 @@
 
                     });
 
+                    /* Text Animation */
+                    $('.text_fadeIn.1')
+                        .textillate({ 
+                            initialDelay: 100,
+                            in : {
+                                effect: 'flipInY'
+                            }
+                        });
+
+                    $('.text_fadeIn.2')
+                        .textillate({ 
+                            initialDelay: 100,
+                            in : {
+                                effect: 'flipInY'
+                            }
+                        });
+
+                    $('.text_fadeIn.3')
+                        .textillate({ 
+                            initialDelay: 800,
+                            in : {
+                                effect: 'flipInY'
+                            }
+                        });
+
+                    $('.text_fadeIn.4')
+                        .textillate({ 
+                            initialDelay: 800,
+                            in : {
+                                effect: 'flipInY'
+                            }
+                        });
+
                 });
             });
 
-
-        })
+        });
     </script>
 </head>
 
@@ -89,19 +126,19 @@
             <div class="computer only row">
                 <div class="column">
                     <div class="ui hidden divider"></div>
-                    <h1 class="ui inverted centered alignment chi logo header">成大吉他社</h1>
-                    <h1 class="ui inverted centered alignment eng logo header">About NCKU Guitar Club</h1>
-                    <h4 class="ui inverted centered alignment  header">││</h4>
-                    <h1 class="ui inverted centered alignment header">成大人&nbsp;&nbsp;+&nbsp;&nbsp;吉他&nbsp;&nbsp;+&nbsp;&nbsp;熱愛音樂的心</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 1 chi logo header" >關於吉他社</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 2 eng logo header" >About NCKU Guitar Club</h1>
+                    <h4 class="ui inverted centered alignment text_fadeIn 3 header">││</h4>
+                    <h1 class="ui inverted centered alignment text_fadeIn 4 header">成大人&nbsp;&nbsp;+&nbsp;&nbsp;吉他&nbsp;&nbsp;+&nbsp;&nbsp;熱愛音樂的心</h1>
                     <div class="ui hidden divider"></div>
                 </div>
             </div>
             <div class="mobile only row">
                 <div class="column">
-                    <h1 class="ui inverted centered alignment chi logo header">成大吉他社</h1>
-                    <h1 class="ui inverted centered alignment eng logo header">NCKU Guitar Club</h1>
-                    <h4 class="ui inverted centered alignment  header">││</h4>
-                    <h1 class="ui inverted centered alignment header">成大人 & 吉他<br/>+<br/>熱愛音樂的心</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 1 chi logo header">關於吉他社</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 2 eng logo header">NCKU Guitar Club</h1>
+                    <h4 class="ui inverted centered alignment text_fadeIn 3  header">││</h4>
+                    <h1 class="ui inverted centered alignment text_fadeIn 4 header">成大人 + 吉他&nbsp;&nbsp;+&nbsp;&nbsp;熱愛音樂的心</h1>
                     <div class="ui hidden divider"></div>
                 </div>
             </div>
@@ -131,8 +168,9 @@
                                         <div class="transition_blue item">
                                             各種類行的音樂
                                             <p class="small description">
-                                                slow soul、slow rock、finger style⋯⋯一琴在手，變化無窮
+                                                slow soul、slow rock、finger style
                                             </p>
+                                            <div class="ui hidden small divider"></div>
                                         </div>
                                         <div class="transition_blue item">
                                             站上舞台的機會

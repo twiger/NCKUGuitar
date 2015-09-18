@@ -53,6 +53,19 @@ ol.ui.modal_list.list {
 }
 
 
+h1.chi.logo.header {
+    font-size: 4rem;
+}
+
+h1.eng.logo.header {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+h1.page.logo.header {
+    font-size: 3rem;
+}
+
+
 /* Loading Animation */
 
 .no-js #loader {
@@ -141,14 +154,42 @@ i.inverted.circular.green.icon {
 
 .slide.home-2 {
     background: url("../data/img/home/2.jpg") 0% 77% / cover no-repeat;
+
+}
+
+.home-2 > p > span.photo_font {
+    color: aliceblue;
+    float: left;
+    margin-top: 10%;
+    margin-left: 17%;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .slide.home-3 {
     background: url("../data/img/home/3.jpg") 0% 21% / cover no-repeat;
 }
 
+.home-3 > p > span.photo_font {
+    color: aliceblue;
+    float: left;
+    margin-top: 30%;
+    margin-left: 17%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
 .slide.home-4 {
     background: url("../data/img/home/4.jpg") 0% 42% / cover no-repeat;
+}
+
+.home-4 > p > span.photo_font {
+    color: aliceblue;
+    float: right;
+    margin-top: 30%;
+    margin-right: 17%;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .owl-pagination {
@@ -170,11 +211,35 @@ i.inverted.circular.green.icon {
     .slide.home-2 {
         background: url("../data/img/home/2.jpg") 0% 77% / cover no-repeat;
     }
+    .home-2 > p > span.photo_font {
+        color: aliceblue;
+        position: absolute;
+        margin: 12%;
+        bottom: 5%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
     .slide.home-3 {
         background: url("../data/img/home/3.jpg") 0% 21% / cover no-repeat;
     }
+    .home-3 > p > span.photo_font {
+        color: aliceblue;
+        position: absolute;
+        margin: 12%;
+        bottom: 5%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
     .slide.home-4 {
         background: url("../data/img/home/4.jpg") 36% 42% / cover no-repeat;
+    }
+    .home-4 > p > span.photo_font {
+        color: aliceblue;
+        position: absolute;
+        margin: 12%;
+        bottom: 5%;
+        font-size: 1rem;
+        line-height: 2rem;
     }
     .owl-pagination,
     .owl-controls {
@@ -256,23 +321,20 @@ i.inverted.circular.green.icon {
     margin: 3.5rem;
 }
 
-h1.chi.logo.header {
-    font-size: -webkit-xxx-large;
-}
-
-h1.eng.logo.header {
-    color: rgba(255, 255, 255, 0.85);
-}
-
-h1.page.logo.header {
-    font-size: 3rem;
-}
-
 .slide.about-1-bg {
     background: url("../data/img/about/2.jpg") 0% 25% / cover no-repeat;
     width: 100%;
     position: absolute;
     z-index: -100;
+}
+
+@media (max-width: 880px) {
+    .slide.about-1-bg {
+        background: url("../data/img/about/2.jpg") 60% 25% / cover no-repeat;
+        width: 100%;
+        position: absolute;
+        z-index: -100;
+    }
 }
 
 .slide.about-1 {
@@ -314,16 +376,14 @@ h4.ui.blue.no_margin_bottom.header {
     margin-bottom: 0rem;
 }
 
-/*
-@media (max-width: 880px) {
-    .ui.modal>.content>.image {
-        width: 25% !important;
-    }
-    .ui.modal>.content>.description {
-        width: 75% !important;
-    }
+table.ui.unstackable.basic.celled.padded.structured.table {
+    background: white;
+    box-shadow: 0px 2px 8px lightgrey;
 }
-*/
+
+.ui.basic.table.course thead {
+    background-color: aliceblue;
+}
 
 
 /* Flok Group */
@@ -374,15 +434,25 @@ p.description.teal {
     color: #21A1E0;
 }
 
-p.description.teal.margin.left.top {
-    margin-left: 12rem;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+span.teal.margin.left.top {
+    margin-left: 6rem;
+    //margin-top: 2rem;
+    //margin-bottom: 0.5rem;
+    color:slategrey;
+    font-weight: 600;
 }
 
-p.description.teal.margin.right.bottom {
-    margin-left: 34rem;
-    margin-right: 5rem;
+span.teal.margin.right.bottom {
+    margin-left: 18rem;
+    //margin-right: 5rem;
+    text-align: right;
+    right:0;
+    color:slategrey;
+    font-weight: 600;
+}
+
+span.margin.left.footer{
+    margin-left: -10rem;
 }
 
 #music_video {

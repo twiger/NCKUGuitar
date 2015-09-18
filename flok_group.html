@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="dist/owl.carousel.css">
     <link rel="stylesheet" href="dist/owl.theme.css">
     <script src="dist/owl.carousel.js"></script>
+    <link href="dist/textillate/animate.css" rel="stylesheet">
+    <script src="dist/textillate/jquery.fittext.js"></script>
+    <script src="dist/textillate/jquery.lettering.js"></script>
+    <script src="dist/textillate/jquery.textillate.js"></script>
     <script>
     $(document)
         .ready(function() {
@@ -25,7 +29,7 @@
             });
 
             /* Laoding Animation */
-            
+
             $(window).load(function() {
                 // Animate loader off screen
                 setTimeout(
@@ -34,7 +38,7 @@
                         $(".se-pre-con").fadeOut("slow");
                     }, 2000);
             });
-            
+
 
             $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
@@ -78,6 +82,59 @@
 
                     $('.ui.accordion').accordion();
 
+                    /* Text Animation */
+                    $('.text_fadeIn.1')
+                        .textillate({
+                            initialDelay: 500,
+                            in : {
+                                effect: 'rotateIn'
+                            }
+                        });
+
+                    if ($(window).width() > 880) {
+                        $('.text_fadeIn.2')
+                            .textillate({
+                                initialDelay: 800,
+                                loop: true,
+                                in : {
+                                    effect: 'rotateIn'
+                                },
+                                out: {
+                                    effect: 'rotateOut',
+                                    shuffle: true,
+                                }
+                            });
+                    } else {
+                        $('.text_fadeIn.2')
+                            .textillate({
+                                initialDelay: 800,
+                                in : {
+                                    effect: 'rotateIn'
+                                }
+                            });
+                    }
+
+                    $(window).bind('scroll', function() {
+                        var pos_y = window.pageYOffset || document.documentElement.scrollTop;
+                        // Start to say history
+                        if (pos_y > $(".ui.page.history.grid").position().top - 800) {
+                            var i, delay = 0;
+                            for (i = 0; i < 12; i++) {
+                                $('.article_fadeIn.' + i)
+                                    .textillate({
+                                        initialDelay: delay,
+                                        in : {
+                                            effect: 'fadeInRight'
+                                        }
+                                    });
+                                delay = delay + 1000;
+                            }
+                        }
+
+                    });
+
+                    
+
                 });
             });
 
@@ -104,15 +161,15 @@
                 <div class="column">
                     <div class="ui hidden large divider"></div>
                     <div class="ui hidden large divider"></div>
-                    <h1 class="ui inverted centered alignment chi logo header">民謠團介紹</h1>
-                    <h1 class="ui inverted centered alignment eng logo header">想知道民謠團與吉他社的關係嗎 ? 快來看看 !</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 1 chi logo header">民謠團介紹</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 2 eng logo header">想知道民謠團與吉他社的關係嗎 ? 快來看看 !</h1>
                     <div class="ui hidden large divider"></div>
                 </div>
             </div>
             <div class="mobile only row">
                 <div class="column">
-                    <h1 class="ui inverted centered alignment chi logo header">民謠團介紹</h1>
-                    <h1 class="ui inverted centered alignment eng logo header">想知道民謠團與吉他社的關係嗎 ? 快來看看 !</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 1 chi logo header">民謠團介紹</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 2 eng logo header">想知道民謠團與吉他社的關係嗎 ? 快來看看 !</h1>
                     <div class="ui hidden divider"></div>
                 </div>
             </div>
@@ -168,26 +225,53 @@
             </div>
             <div class="computer only row">
                 <div class="column">
-                    <div class="ui basic segment">
-                        <p class="description">由於時間過於久遠，未詳細記載，吉他社的歷史從何而起，難以考證。
-                            <br/> 只是據說以前吉他社出去外面表演的人都是由最強的人來擔綱，
-                            <br/> 而改成現在這種徵選新人進來訓練是從民國 86 年開始的，
-                            <br/> 那是第一次的民謠團徵選，至今已有 20 年之久。
-                            <br/> 在這段期間，民謠團人數漸多，實力也更加堅強。
-                        </p>
+                    <div class="ui basic history_article segment">
                         <p class="description">
-                            雖然無法確切知道吉他社開始的時間，
-                            <br/> 不過在夢之大地吉他社版上，翻開第一頁即為這樣的一段話
-                        </p>
-                        <p class="description teal margin top left">
-                            這世界是如此喧囂，讓沉默得人顯得有點傻，
-                            <br/> 這些人不能小看呀，如果你給他一把吉他。
-                        </p>
-                        <p class="description teal margin bottom right">
-                            李宗盛 / 世界如此喧嘩
-                        </p>
-                        <p class="description">
-                            不管時間如何變遷，我們，也許我們，就是這樣用吉他、用音樂在說故事的一群人吧。
+                            <span class="article_fadeIn 1"> 
+                                由於時間過於久遠，未詳細記載，吉他社的歷史從何而起，難以考證。
+                            </span>
+                            <br/>
+                            <span class="article_fadeIn 2">
+                                只是據說以前吉他社出去外面表演的人都是由最強的人來擔綱，
+                            </span>
+                            <br/>
+                            <span class="article_fadeIn 3">
+                                而改成現在這種徵選新人進來訓練是從民國 86 年開始的，
+                            </span>
+                            <br/>
+                            <span class="article_fadeIn 4">
+                                那是第一次的民謠團徵選，至今已有 20 年之久。
+                            </span>
+                            <br/>
+                            <span class="article_fadeIn 5">
+                                在這段期間，民謠團人數漸多，實力也更加堅強。
+                            </span>
+                            <br/>
+                            <br/>
+                            <span class="article_fadeIn 6">
+                                雖然無法確切知道吉他社開始的時間，
+                            </span>
+                            <br/>
+                            <span class="article_fadeIn 7">
+                                不過在夢之大地吉他社版上，翻開第一頁即為這樣的一段話
+                            </span>
+                            <br/>
+                            <br/>
+                            <span class="teal margin top left article_fadeIn 8">
+                                這世界是如此喧囂，讓沉默得人顯得有點傻，
+                            </span>
+                            <br/>
+                            <span class="teal margin top left article_fadeIn 9">
+                                這些人不能小看呀，如果你給他一把吉他。
+                            </span>
+                            <br/>
+                            <span class="teal margin bottom right article_fadeIn 10">
+                                李宗盛/世界如此喧嘩
+                            </span>
+                            <br/>
+                            <span class="margin left footer article_fadeIn 11">
+                                不管時間如何變遷，我們，也許我們，就是這樣用吉他、用音樂在說故事的一群人吧。
+                            </span>
                         </p>
                     </div>
                 </div>
