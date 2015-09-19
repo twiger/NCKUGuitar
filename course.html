@@ -121,6 +121,18 @@
                     .modal('show');
             });
 
+            $("#c_class").click(function() {
+                $(".c_class")
+                    .modal('setting', 'transition', 'fade up')
+                    .modal('show');
+            });
+
+            $("#d_class").click(function() {
+                $(".d_class")
+                    .modal('setting', 'transition', 'fade up')
+                    .modal('show');
+            });
+
             $(window).bind('scroll', function() {
                 var pos_y = window.pageYOffset || document.documentElement.scrollTop;
                 // Master Menu BG Black
@@ -203,7 +215,7 @@
                                     <h4 class="ui header">彈唱班<div class="sub header"><br/>(大琴室)</div></h4>
                                 </td>
                                 <td>
-                                    <h4 class="ui header">團練時間</h4>
+                                    <h4 class="ui header">空堂！</h4>
                                 </td>
                                 <td rowspan="3">
                                     <h4>民</h4>
@@ -216,10 +228,11 @@
                                     <h4 class="ui header">指彈班<div class="sub header"><br/>(大琴室)</div></h4>
                                 </td>
                                 <td rowspan="3">
-                                    <h4>團</h4>
-                                    <h4>練</h4>
-                                    <h4>之</h4>
-                                    <h4>夜</h4>
+                                    <h4>沒</h4>
+                                    <h4>事</h4>
+                                    <h4>來</h4>
+                                    <h4>木</h4>
+                                    <h4>舞</h4>
                                 </td>
                             </tr>
                             <tr class="center aligned">
@@ -227,10 +240,10 @@
                                     <h5>19:30 - 20:00</h5>
                                 </td>
                                 <td colspan="2">
-                                    <h4 class="ui header">團練時間</h4>
+                                    <h4 class="ui header">緩衝時間</h4>
                                 </td>
                                 <td>
-                                    <h5>團練時間</h5>
+                                    <h5>緩衝時間</h5>
                                 </td>
                             </tr>
                             <tr class="center aligned">
@@ -279,12 +292,12 @@
                             <tr class="center aligned">
                                 <th>MON</th>
                                 <th>彈唱班</th>
-                                <th>團練</th>
+                                <th>緩衝</th>
                                 <th>進階班</th>
                             </tr>
                             <tr class="center aligned">
                                 <th>TUE</th>
-                                <th colspan="2">團練</th>
+                                <th colspan="2">緩衝</th>
                                 <th>初級 A 班</th>
                             </tr>
                             <tr class="center aligned">
@@ -294,12 +307,12 @@
                             <tr class="center aligned">
                                 <th>THU</th>
                                 <th>指彈班</th>
-                                <th>團練</th>
+                                <th>緩衝</th>
                                 <th>初級 B 班</th>
                             </tr>
                             <tr class="center aligned">
-                                <th>WED</th>
-                                <th colspan="3">團練之夜</th>
+                                <th>FRI</th>
+                                <th colspan="3">沒事來木舞</th>
                             </tr>
                         </tbody>
                     </table>
@@ -354,7 +367,7 @@
                                                     </div>
                                                     <div class="twelve wide column">
                                                         <h3 class="ui dividing header">
-                                                        <span class="role_in_modal">初級 A 班</span>&nbsp;&nbsp;&nbsp;&nbsp;每周二 晚上 8:00 - 9:00
+                                                        <span class="role_in_modal">初級 A 班</span>&nbsp;&nbsp;&nbsp;&nbsp;每週二 晚上 8:00 - 9:00
                                                         <div class="sub header"><a class="fb_link" href="https://www.facebook.com/profile.php?id=100002569629535&fref=ts">https://www.facebook.com/profile.php?id=100002569629535&fref=ts</a></div>
                                                         </h3>
                                                         <p class="small description">
@@ -402,7 +415,7 @@
                                                     </div>
                                                     <div class="twelve wide column">
                                                         <h3 class="ui dividing header">
-                                                        <span class="role_in_modal">初級 B 班</span>&nbsp;&nbsp;&nbsp;&nbsp;每周四 晚上 8:00 - 9:00
+                                                        <span class="role_in_modal">初級 B 班</span>&nbsp;&nbsp;&nbsp;&nbsp;每週四 晚上 8:00 - 9:00
                                                         <div class="sub header"><a class="fb_link" href="https://www.facebook.com/profile.php?id=100000292401500&fref=ts">https://www.facebook.com/profile.php?id=100000292401500&fref=ts</a></div>
                                                         </h3>
                                                         <p class="small description">
@@ -426,36 +439,100 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="eight wide center aligned column">
+                                <div id="c_class" class="eight wide center aligned column">
                                     <h2 class="ui icon header">
-                                        <img src="data/img/about/民歌賽.jpg" class="ui circular centered small image" />
+                                        <img src="data/img/course/彈唱班.jpg" class="ui circular centered small image" />
                                         <div class="content">
                                             <div class="ui hidden divider"></div>
-                                            成大民歌賽
+                                            彈唱班
                                         </div>
                                     </h2>
                                     <div class="list segment">
-                                        <ol class="ui large list">
-                                            <li>下學期舉辦 分成初賽、複賽</li>
-                                            <li>歡迎成大所有師生參加</li>
-                                            <li>不只民歌，任何曲風及樂器均可</li>
-                                        </ol>
+                                        <p class="line-3 small description">
+                                            一堂課一首歌。你的背包、facebook、外面的世界、High and Dry、Vincent、別找我麻煩、抱著你、異常現象、想把你
+                                        </p>
+                                    </div>
+                                    <div class="ui c_class modal">
+                                        <i class="close icon"></i>
+                                        <div class="content">
+                                            <div class="ui stackable grid">
+                                                <div class="row">
+                                                    <div class="four wide column">
+                                                        <img src="data/img/course/彈唱班.jpg" class="ui circular centered fluid image" />
+                                                    </div>
+                                                    <div class="twelve wide column">
+                                                        <h3 class="ui dividing header">
+                                                        <span class="role_in_modal">彈唱班</span>&nbsp;&nbsp;&nbsp;&nbsp;每週一 晚上 6:30 - 7:30
+                                                        <div class="sub header"><a class="fb_link" href="https://www.facebook.com/profile.php?id=100002379291777&fref=ts">https://www.facebook.com/profile.php?id=100002379291777&fref=ts</a></div>
+                                                        </h3>
+                                                        <p class="small description">
+                                                            一堂課一首歌。
+                                                        </p>
+                                                        <h4 class="ui no_margin_bottom blue header">教學團隊：</h4>
+                                                        <p class="small description">
+                                                            社師 - 詹勳承、Noel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 助教 - 阿吉、倪詠庭、康宇鎧
+                                                        </p>
+                                                        <h4 class="ui blue header">授課內容：</h4>
+                                                        <ol class="ui modal_list list">
+                                                            <li><a href="https://www.youtube.com/watch?v=gajK1WDz3Rk">你的背包-陳奕迅</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：掛留和弦、刷扣</li>
+                                                            <li><a href="https://www.youtube.com/watch?v=mRNmGQtPYKs">facebook – 何仁傑</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：打板</li>
+                                                            <li><a href="https://www.youtube.com/watch?v=rmPWR9Szmig">外面的世界 – 齊秦</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：三指法</li>
+                                                            <li><a href="https://www.youtube.com/watch?v=BciOfJsqh7M">High and Dry - Radiohead</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：特殊刷扣</li>
+                                                            <li><a href="https://www.youtube.com/watch?v=CI9-9ZzYJEI">Vincent – 王若琳</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：分散和弦</li>
+                                                            <li><a href="https://www.youtube.com/watch?v=Ua9DKclFKLA">別找我麻煩 - 蔡健雅</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：複根音</li>
+                                                            <li><a href="https://www.youtube.com/watch?v=bFEKOqHfLsY">抱著你 - 張震嶽</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：想不到ㄏ</li>
+                                                            <li><a href="https://www.youtube.com/watch?v=Ua9DKclFKLA">異常現象 - hush！樂團</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：三拍子</li>
+                                                            <li><a href="https://www.youtube.com/watch?v=939VLrRDdoQ">想把你拍成一部電影 - 宇宙人</a>&nbsp;&nbsp;&nbsp;&nbsp;教學重點：Bossa nova ，打板 (Flicking)</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="eight wide center aligned column">
+                                <div id="d_class" class="eight wide center aligned column">
                                     <h2 class="ui icon header">
-                                        <img src="data/img/about/期末成發.jpg" class="ui circular centered small image" />
+                                        <img src="data/img/course/進階班.jpg" class="ui circular centered small image" />
                                         <div class="content">
                                             <div class="ui hidden divider"></div>
-                                            吉他社期末成發
+                                            進階班
                                         </div>
                                     </h2>
                                     <div class="list segment">
-                                        <ol class="ui large list">
-                                            <li>各學期末舉辦</li>
-                                            <li>吉他社內各班級的成果展現</li>
-                                            <li>大合刷、FingerStyle、民謠團歌</li>
-                                        </ol>
+                                        <p class="line-3 small description">
+                                            先教一些基本功跟樂理的東西,之後讓大家試著搭配做歌
+                                        </p>
+                                    </div>
+                                    <div class="ui d_class modal">
+                                        <i class="close icon"></i>
+                                        <div class="content">
+                                            <div class="ui stackable grid">
+                                                <div class="row">
+                                                    <div class="four wide column">
+                                                        <img src="data/img/course/進階班.jpg" class="ui circular centered fluid image" />
+                                                    </div>
+                                                    <div class="twelve wide column">
+                                                        <h3 class="ui dividing header">
+                                                        <span class="role_in_modal">進階班</span>&nbsp;&nbsp;&nbsp;&nbsp;每週一 晚上 8:00 - 9:00
+                                                        <div class="sub header"><a class="fb_link" href="https://www.facebook.com/profile.php?id=100000183586995&ref=ts&fref=ts">https://www.facebook.com/profile.php?id=100000183586995&ref=ts&fref=ts</a></div>
+                                                        </h3>
+                                                        <p class="small description">
+                                                            先教一些基本功跟樂理的東西,之後讓大家試著搭配做歌
+                                                        </p>
+                                                        <h4 class="ui no_margin_bottom blue header">教學團隊：</h4>
+                                                        <p class="small description">
+                                                            社師 - 曹育榕、抓雞&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 助教 - 權倫、品融
+                                                        </p>
+                                                        <h4 class="ui blue header">授課內容：</h4>
+                                                        <ol class="ui modal_list list">
+                                                            <li>各種指型和音階介紹</li>
+                                                            <li>和弦組成音</li>
+                                                            <li>簡單單吉他編曲跟雙吉他合奏概念</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

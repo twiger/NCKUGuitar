@@ -385,6 +385,9 @@ table.ui.unstackable.basic.celled.padded.structured.table {
     background-color: aliceblue;
 }
 
+#a_class, #b_class, #c_class, #d_class{
+    cursor: pointer;
+}
 
 /* Flok Group */
 
