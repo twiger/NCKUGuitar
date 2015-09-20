@@ -41,6 +41,9 @@
                     $(".photo.slide").css("height", $(window).height());
                     $(".master.dark_bg.menu").hide();
 
+                    $(".ui.huge.hidden.divider").css(
+                        "margin", $(window).height() - $(".anchor.eng.logo.header").position().top);
+
                     $(".master .menu > a").removeClass("active");
                     $(".registration.item").addClass("active");
 
@@ -63,10 +66,24 @@
 
                     });
 
+
+
                 });
             });
 
         })
+
+    jQuery(function($) {
+        var lastHeight = 0,
+            curHeight = 0,
+            $frame = $('iframe:eq(0)');
+        setInterval(function() {
+            curHeight = $frame.contents().find('body').height();
+            if (curHeight != lastHeight) {
+                $frame.css('height', (lastHeight = curHeight) + 'px');
+            }
+        }, 500);
+    });
     </script>
 </head>
 
@@ -89,8 +106,8 @@
                     <div class="ui hidden large divider"></div>
                     <div class="ui hidden large divider"></div>
                     <h1 class="ui inverted centered alignment chi logo header">報名民謠團甄選</h1>
-                    <h1 class="ui inverted centered alignment eng logo header">想加入我們嗎？填完以下的表單，我們當天不見不散！</h1>
-                    <div class="ui hidden large divider"></div>
+                    <h1 class="ui inverted centered alignment anchor eng logo header">想加入我們嗎？填完以下的表單，我們當天不見不散！</h1>
+                    <div class="ui hidden huge divider"></div>
                 </div>
             </div>
             <div class="mobile only row">
@@ -100,6 +117,7 @@
                     <div class="ui hidden divider"></div>
                 </div>
             </div>
+            <!--
             <div class="computer only row">
                 <div class="column">
                     <div class="ui raised very padded segment">
@@ -212,73 +230,21 @@
                     </div>
                 </div>
             </div>
-            <div class="mobile only row">
-                <div class="column">
-                    <iframe id="google_form" src="https://docs.google.com/forms/d/1s1f9MH5-gTq3R-pOFLP2KgwzCYDbCFkqvYIH7Z6_NZc/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="-10" marginwidth="-10" class="noScrolling">載入中…</iframe>
-                </div>
-            </div>
+            -->
         </div>
-        <div class="ui page page history grid">
-            <div class="row">
-                <div class="column">
-                    <h1 class="ui page logo header">
-                    <div class="content">
-                        <div class="ui hidden divider"></div>
-                        歷史沿革│
-                    </div>
-                </h1>
-                </div>
-            </div>
+        <div class="ui grid">
             <div class="computer only row">
                 <div class="column">
-                    <div class="ui basic segment">
-                        <p class="description">由於時間過於久遠，未詳細記載，吉他社的歷史從何而起，難以考證。
-                            <br/> 只是據說以前吉他社出去外面表演的人都是由最強的人來擔綱，
-                            <br/> 而改成現在這種徵選新人進來訓練是從民國 86 年開始的，
-                            <br/> 那是第一次的民謠團徵選，至今已有 20 年之久。
-                            <br/> 在這段期間，民謠團人數漸多，實力也更加堅強。
-                        </p>
-                        <p class="description">
-                            雖然無法確切知道吉他社開始的時間，
-                            <br/> 不過在夢之大地吉他社版上，翻開第一頁即為這樣的一段話
-                        </p>
-                        <p class="description teal margin top left">
-                            這世界是如此喧囂，讓沉默得人顯得有點傻，
-                            <br/> 這些人不能小看呀，如果你給他一把吉他。
-                        </p>
-                        <p class="description teal margin bottom right">
-                            李宗盛 / 世界如此喧嘩
-                        </p>
-                        <p class="description">
-                            不管時間如何變遷，我們，也許我們，就是這樣用吉他、用音樂在說故事的一群人吧。
-                        </p>
-                    </div>
+                    <div class="ui hidden divider"></div>
+                    <iframe id="google_form" src="//docs.google.com/forms/d/1Ayz6nIzfW1PArbA-sC06oeVMDaWIyVl5EzTHOM-fhN8/viewform" width="100%" height="1100" frameborder="0" marginheight="-10" marginwidth="-10" class="noScrolling">載入中…</iframe>
+                    <div class="ui hidden divider"></div>
                 </div>
             </div>
             <div class="mobile only row">
                 <div class="column">
-                    <div>
-                        <p class="description">由於時間過於久遠，未詳細記載，吉他社的歷史從何而起，難以考證。
-                            <br/> 只是據說以前吉他社出去外面表演的人都是由最強的人來擔綱，而改成現在這種徵選新人進來訓練是從民國 86 年開始的，那是第一次的民謠團徵選，至今已有 20 年之久。
-                            <br/> 在這段期間，民謠團人數漸多，實力也更加堅強。
-                        </p>
-                        <p class="description">
-                            雖然無法確切知道吉他社開始的時間，不過在夢之大地吉他社版上，翻開第一頁即為這樣的一段話
-                        </p>
-                        <p class="description teal">
-                            這世界是如此喧囂，讓沉默得人顯得有點傻，
-                            <br/> 這些人不能小看呀，如果你給他一把吉他。
-                        </p>
-                        <p class="description teal margin center">
-                            李宗盛 / 世界如此喧嘩
-                        </p>
-                        <p class="description">
-                            不管時間如何變遷，我們，也許我們，就是這樣用吉他、用音樂在說故事的一群人吧。
-                        </p>
-                    </div>
+                    <iframe id="google_form" src="//docs.google.com/forms/d/1Ayz6nIzfW1PArbA-sC06oeVMDaWIyVl5EzTHOM-fhN8/viewform" width="100%" height="1100" frameborder="0" marginheight="-10" marginwidth="-10" class="noScrolling">載入中…</iframe>
                 </div>
             </div>
-            <div class="ui hidden large divider"></div>
         </div>
     </div>
     <div class="ui page light_blue page stackable grid">

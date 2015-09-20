@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #F6F7F7;
 }
 
 .ui.hidden.narrow.divider {
@@ -14,6 +14,10 @@ body {
 
 .ui.large.hidden.divider {
     margin: 3rem 0rem !important;
+}
+
+.ui.huge.hidden.divider {
+    margin: 10rem 0rem !important;
 }
 
 .description {
