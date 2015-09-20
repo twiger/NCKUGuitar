@@ -24,7 +24,7 @@
             });
 
             /* Laoding Animation */
-            /*
+
             $(window).load(function() {
                 // Animate loader off screen
                 setTimeout(
@@ -33,7 +33,7 @@
                         $(".se-pre-con").fadeOut("slow");
                     }, 2000);
             });
-            */
+
 
             $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
@@ -41,8 +41,8 @@
                     $(".photo.slide").css("height", $(window).height());
                     $(".master.dark_bg.menu").hide();
 
-                    $(".ui.huge.hidden.divider").css(
-                        "margin", $(window).height() - $(".anchor.eng.logo.header").position().top);
+                    //$(".ui.huge.hidden.divider").css(
+                    //    "margin", $(window).height() - $(".anchor.eng.logo.header").position().top);
 
                     $(".master .menu > a").removeClass("active");
                     $(".registration.item").addClass("active");
@@ -67,6 +67,7 @@
 
                         }
 
+                        /*
                         if ($(window).width() > 880) {
                             if (pos_y < $(window).height()) {
                                 //scroll_bool = true;
@@ -77,6 +78,7 @@
                                 scrollUpToTarget("google_form");
                             }
                         }
+                        */
 
                     });
 
@@ -90,6 +92,7 @@
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
     <div class="photo slide registration-1-bg">
         <div class="photo slide registration-1">
         </div>
@@ -108,15 +111,51 @@
                     <div class="ui hidden large divider"></div>
                     <div class="ui hidden large divider"></div>
                     <h1 class="ui inverted centered alignment chi logo header">報名民謠團甄選</h1>
-                    <h1 class="ui inverted centered alignment anchor eng logo header">想加入我們嗎？填完以下的表單，我們當天不見不散！</h1>
-                    <div class="ui hidden huge divider"></div>
+                    <h1 class="ui inverted centered alignment anchor eng logo header">
+                        拿起吉他，10/7、10/8 一活大琴室來敲個門吧
+                    </h1>
+                    <div class="ui hidden large divider"></div>
                 </div>
             </div>
             <div class="mobile only row">
                 <div class="column">
                     <h1 class="ui inverted centered alignment chi logo header">報名民謠團甄選</h1>
-                    <h1 class="ui inverted centered alignment eng logo header">想加入我們嗎？填完以下的表單，我們當天不見不散！</h1>
+                    <h1 class="ui inverted centered alignment eng logo header">
+                        拿起吉他，10/7、10/8 一活大琴室來敲個門吧
+                    </h1>
                     <div class="ui hidden huge divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="ui raised very padded segment">
+                        <h1 class="ui dividing header">
+                            如何加入民謠團
+                        </h1>
+                        <div class="ui basic segment">
+                            <p class="small description">
+                                我們將在10/7(三)、10/8(四)舉行徵選會，
+                                <br/> 歡迎對音樂有熱情的你或妳，
+                                <br/> 準備一首自彈自唱的歌曲，
+                                <br/> ( 也歡迎雙人組團，或真的對吉他還不熟悉的人，可找人代為伴奏 ）
+                                <br/> 來參加徵選！
+                            </p>
+                            <p class="small description">
+                                ( 有任何令人為之一亮的才藝也歡迎在徵選會時展現出來呦！ex.很會打鼓、很會彈奏演奏曲等等 )
+                            </p>
+                            <p class="small description">
+                                喜歡音樂，熱愛表演，
+                                <br/> 期待和夥伴一同組團搭歌的你，
+                                <br/> 絕對不能錯過這裡。
+                                <br/>
+                            </p>
+                            <p class="small description">
+                                我們，要的就是你！
+                            </p>
+                        </div>
+                        <img class="ui fluid image" src="data/img/registration/2.jpg" />
+                    </div>
+                    <div class="ui hidden large divider"></div>
                 </div>
             </div>
             <!--
@@ -234,6 +273,7 @@
             </div>
             -->
         </div>
+        <!--
         <div class="ui grid">
             <div class="computer only row">
                 <div class="column">
@@ -248,6 +288,7 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
     <div class="ui page light_blue page stackable grid">
         <div class="row">
@@ -255,128 +296,67 @@
                 <div class="ui hidden divider"></div>
                 <h1 class="ui centered alignment inverted page logo header">
                     <div class="content">
-                        熱門歌曲
+                        甄選資訊
                         <div class="page sub header">
-                            來聽聽我們用吉他說的故事吧！
+                            Selection Information
                         </div>
                     </div>
                 </h1>
-                <div class="ui hidden divider"></div>
             </div>
         </div>
-        <div class="stretched row">
-            <div class="computer only four wide column">
-                <div class="ui vertical pointing menu">
-                    <div class="ui dropdown item">
-                        <i class="dropdown icon"></i> 最新影音
-                        <div class="video menu">
-                            <a id="1-1" class="item">新鮮人之夜</a>
-                            <a id="1-2" class="item">登大人民謠團表演</a>
-                            <a id="1-3" class="item">大鬧成杏廳</a>
-                        </div>
-                    </div>
-                    <div class="ui dropdown item">
-                        <i class="dropdown icon"></i> 獨唱
-                        <div class="menu">
-                            <div class="header">歌曲名稱</div>
-                            <a id="2-1" class="item">Small</a>
-                            <a id="2-2" class="item">Medium</a>
-                            <a id="2-3" class="item">Large</a>
-                        </div>
-                    </div>
-                    <div class="ui dropdown item">
-                        <i class="dropdown icon"></i> 樂團
-                        <div class="menu">
-                            <div class="header">歌曲名稱</div>
-                            <a id="3-1" class="item">Small</a>
-                            <a id="3-2" class="item">Medium</a>
-                            <a id="3-3" class="item">Large</a>
-                        </div>
-                    </div>
-                    <div class="ui dropdown item">
-                        <i class="dropdown icon"></i> 創作
-                        <div class="menu">
-                            <div class="header">歌曲名稱</div>
-                            <a id="4-1" class="item">Small</a>
-                            <a id="4-2" class="item">Medium</a>
-                            <a id="4-3" class="item">Large</a>
-                        </div>
-                    </div>
-                    <div class="ui dropdown item">
-                        <i class="dropdown icon"></i> DEMO (高音質)
-                        <div class="menu">
-                            <div class="header">歌曲名稱</div>
-                            <a id="5-1" class="item">Small</a>
-                            <a id="5-2" class="item">Medium</a>
-                            <a id="5-3" class="item">Large</a>
-                        </div>
-                    </div>
-                    <a class="item">更多歌曲</a>
+        <div class="row">
+            <div class="eleven wide column">
+                <h2 class="ui inverted header">報名方式：</h2>
+                <div class="ui basic segment">
+                    <h3 class="ui inverted header">
+                        1. 網路報名 - 點選下方立即報名鍵填寫報名表
+                        <br/>( 在9/23(三)、9/24(四)的社團博覽會，以及10/2(五)的吉他社期初社大，我們也都將在攤位上設置電腦讓大家報名呦！)
+                    </h3>
+                    <h3 class="ui inverted header">
+                        2. 現場報名 - 在10/7(三)、10/8(四)兩天的徵選會中，我們也開放現場報名呦！
+                        <br/>(現場報名名額將排至網路報名名單之後)
+                    </h3>
+                    <h3 class="ui inverted header">【備註】報名日期 - 即日起到 10/4 (日)晚間 23:59 為止</h3>
                 </div>
             </div>
-            <div class="mobile only four wide column">
-                <div class="ui styled fluid accordion">
-                    <div class="active title">
-                        <i class="dropdown icon"></i> 最新影音
-                    </div>
-                    <div class="active content">
-                        <div class="ui secondary vertical pointing fluid video menu">
-                            <a id="1-1" class="item">新鮮人之夜</a>
-                            <a id="1-2" class="item">登大人民謠團表演</a>
-                            <a id="1-3" class="item">大鬧成杏廳</a>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <i class="dropdown icon"></i> 獨唱
-                    </div>
-                    <div class="content">
-                        <div class="ui secondary vertical pointing fluid video menu">
-                            <a id="1-1" class="item">新鮮人之夜</a>
-                            <a id="1-2" class="item">登大人民謠團表演</a>
-                            <a id="1-3" class="item">大鬧成杏廳</a>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <i class="dropdown icon"></i> 樂團
-                    </div>
-                    <div class="content">
-                        <div class="ui secondary vertical pointing fluid video menu">
-                            <a id="1-1" class="item">新鮮人之夜</a>
-                            <a id="1-2" class="item">登大人民謠團表演</a>
-                            <a id="1-3" class="item">大鬧成杏廳</a>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <i class="dropdown icon"></i> 創作
-                    </div>
-                    <div class="content">
-                        <div class="ui secondary vertical pointing fluid video menu">
-                            <a id="1-1" class="item">新鮮人之夜</a>
-                            <a id="1-2" class="item">登大人民謠團表演</a>
-                            <a id="1-3" class="item">大鬧成杏廳</a>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <i class="dropdown icon"></i> DEMO (高音質)
-                    </div>
-                    <div class="content">
-                        <div class="ui secondary vertical pointing fluid video menu">
-                            <a id="1-1" class="item">新鮮人之夜</a>
-                            <a id="1-2" class="item">登大人民謠團表演</a>
-                            <a id="1-3" class="item">大鬧成杏廳</a>
-                        </div>
-                    </div>
+            <div class="five wide column"></div>
+        </div>
+        <div class="row">
+            <div class="sixteen wide column">
+                <div class="white_divider_bg">
+                    <div class="white_divider"></div>
+                </div>
+                <div class="ui hidden divider"></div>
+            </div>
+            <div class="five wide column">
+                <h3 class="ui inverted header">
+                    有任何問題歡迎與我們聯絡：
+                </h3>
+            </div>
+            <div class="five wide column">
+                <h3 class="ui inverted right aligned header">
+                    民謠團總團長 |<br/><br/><br/>
+                    社長 |<br/>
+                    副社長 |
+                </h3>
+            </div>
+            <div class="six wide column">
+                <h3 class="ui inverted right aligned header">
+                    工設 106 陳冠伶 0932879807 <br/>
+                    lianananan1234567@gmail.com<br/><br/>
+                    經濟 107 許伯韶 0932182051<br/>
+                    歷史 106 林敏婷 0984300216
+                </h3>
+            </div>
+            <div class="sixteen wide column">
+                <div class="ui hidden divider"></div>
+                <div class="white_divider_bg">
+                    <div class="white_divider"></div>
                 </div>
             </div>
-            <div class="twelve wide column">
-                <div class="ui segment">
-                    <div class="ui display embed 1-1 video" data-source="youtube" data-url="https://www.youtube.com/embed/jKXn-Gvgwgg">
-                    </div>
-                    <div class="ui embed 1-2 video" data-source="youtube" data-url="https://www.youtube.com/embed/UHSUJLKCr2E">
-                    </div>
-                    <div class="ui embed 1-3 video" data-source="youtube" data-url="https://www.youtube.com/embed/wTX9qAYA1Qc">
-                    </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="column">
             </div>
         </div>
         <div class="ui hidden large divider"></div>

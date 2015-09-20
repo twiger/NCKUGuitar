@@ -16,9 +16,11 @@ body {
     margin: 3rem 0rem !important;
 }
 
+/*
 .ui.huge.hidden.divider {
     margin: 10rem 0rem !important;
 }
+*/
 
 .description {
     font-size: 1.5rem;
@@ -345,6 +347,19 @@ i.inverted.circular.green.icon {
 .double_divider_bg {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.white_divider {
+    height: 0.15rem;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.white_divider_bg {
+    width:100%;
+    margin:0 auto;
 }
 
 .transition_blue.item.active {

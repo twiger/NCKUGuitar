@@ -96,7 +96,7 @@ var scroll_down_bool = true;
 var scroll_up_bool = true;
 
 function scrollDownToTarget(target) {
-    console.log(pos);
+    //console.log(pos);
     var current_pos = $(this).scrollTop();
     if (current_pos > pos && scroll_down_bool) {
         //Scroll Down
@@ -112,13 +112,13 @@ function scrollDownToTarget(target) {
 }
 
 function scrollUpToTarget(target) {
-    console.log(pos);
+    //console.log(pos);
     var current_pos = $(this).scrollTop();
     if (current_pos < pos && scroll_up_bool) {
         //Scroll Down
         disable_scroll();
         $('html, body').animate({
-            scrollTop: $("#" + target).offset().top - 50
+            scrollTop: $("#" + target).offset().top
         }, 1000, function() {
             enable_scroll();
         });
