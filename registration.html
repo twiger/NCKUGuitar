@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="dist/owl.theme.css">
     <script src="dist/owl.carousel.js"></script>
     <script>
+
     $(document)
         .ready(function() {
 
@@ -51,6 +52,7 @@
                         $('.ui.sidebar').sidebar('toggle');
                     });
 
+                    var prev_pos_y = 0
                     $(window).bind('scroll', function() {
                         var pos_y = window.pageYOffset || document.documentElement.scrollTop;
                         // Master Menu BG Black
@@ -58,10 +60,21 @@
                             $('.master.menu').css('display', "none");
                             $('.master.dark_bg.menu').fadeIn();
                             current_master = "dark_bg";
+
                         } else if (pos_y < $(window).height() && current_master == "dark_bg") {
                             $('.master.menu').css("display", "flex").hide().fadeIn();
                             $('.master.dark_bg.menu').css('display', 'none');
                             current_master = "transparent";
+
+                        }
+
+                        if (pos_y < $(window).height()){
+                            //scroll_bool = true;
+                            scrollDownToTarget("google_form");
+                        }
+                        if (pos_y > $(window).height()+$("google_form").height()){
+                            //scroll_bool = true;
+                            scrollUpToTarget("google_form");
                         }
 
                     });
@@ -71,19 +84,8 @@
                 });
             });
 
-        })
+        });
 
-    jQuery(function($) {
-        var lastHeight = 0,
-            curHeight = 0,
-            $frame = $('iframe:eq(0)');
-        setInterval(function() {
-            curHeight = $frame.contents().find('body').height();
-            if (curHeight != lastHeight) {
-                $frame.css('height', (lastHeight = curHeight) + 'px');
-            }
-        }, 500);
-    });
     </script>
 </head>
 

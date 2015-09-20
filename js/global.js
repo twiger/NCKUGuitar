@@ -92,12 +92,13 @@ $(function() {
 // For Slide window
 
 var pos = 0;
-var scroll_bool = true;
+var scroll_down_bool = true;
+var scroll_up_bool = true;
 
-function scrollToTarget(target) {
+function scrollDownToTarget(target) {
     console.log(pos);
     var current_pos = $(this).scrollTop();
-    if (current_pos > pos && scroll_bool) {
+    if (current_pos > pos && scroll_down_bool) {
         //Scroll Down
         disable_scroll();
         $('html, body').animate({
@@ -105,8 +106,25 @@ function scrollToTarget(target) {
         }, 1000, function() {
             enable_scroll();
         });
-        scroll_bool = false;
+        scroll_down_bool = false;
     }
+    pos = current_pos;
+}
+
+function scrollUpToTarget(target) {
+    console.log(pos);
+    var current_pos = $(this).scrollTop();
+    if (current_pos < pos && scroll_up_bool) {
+        //Scroll Down
+        disable_scroll();
+        $('html, body').animate({
+            scrollTop: $("#" + target).offset().top - 50
+        }, 1000, function() {
+            enable_scroll();
+        });
+        scroll_up_bool = false;
+    }
+    pos = current_pos;
 }
 
 
