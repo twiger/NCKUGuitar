@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="dist/owl.theme.css">
     <script src="dist/owl.carousel.js"></script>
     <script>
-
     $(document)
         .ready(function() {
 
@@ -68,13 +67,15 @@
 
                         }
 
-                        if (pos_y < $(window).height()){
-                            //scroll_bool = true;
-                            scrollDownToTarget("google_form");
-                        }
-                        if (pos_y > $(window).height()+$("google_form").height()){
-                            //scroll_bool = true;
-                            scrollUpToTarget("google_form");
+                        if ($(window).width() > 880) {
+                            if (pos_y < $(window).height()) {
+                                //scroll_bool = true;
+                                scrollDownToTarget("google_form");
+                            }
+                            if (pos_y > $(window).height() + $("google_form").height()) {
+                                //scroll_bool = true;
+                                scrollUpToTarget("google_form");
+                            }
                         }
 
                     });
@@ -85,7 +86,6 @@
             });
 
         });
-
     </script>
 </head>
 
@@ -116,7 +116,7 @@
                 <div class="column">
                     <h1 class="ui inverted centered alignment chi logo header">報名民謠團甄選</h1>
                     <h1 class="ui inverted centered alignment eng logo header">想加入我們嗎？填完以下的表單，我們當天不見不散！</h1>
-                    <div class="ui hidden divider"></div>
+                    <div class="ui hidden huge divider"></div>
                 </div>
             </div>
             <!--
