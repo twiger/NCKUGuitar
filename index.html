@@ -73,7 +73,7 @@
                     /* Slide & Text Animation */
                     var slide_num = 1;
                     var i, delay = 0;
-                    for (i = 1; i < 4; i++) {
+                    for (i = 1; i < 5; i++) {
                         $('.home-' + slide_num + ' > p > span.photo_font > .text_fadeIn.' + i)
                             .textillate({
                                 initialDelay: delay,
@@ -83,7 +83,7 @@
                             });
                         delay = delay + 500;
                     }
-
+                    
                     setInterval(
                         function() {
                             $("#owl-carousel").trigger('owl.next');
@@ -91,7 +91,7 @@
                             slide_num = slide_num + 1;
 
                             var i, delay = 0;
-                            for (i = 1; i < 4; i++) {
+                            for (i = 1; i < 5; i++) {
                                 $('.home-' + slide_num + ' > p > span.photo_font > .text_fadeIn.' + i)
                                     .textillate({
                                         initialDelay: delay,
@@ -102,11 +102,12 @@
                                 delay = delay + 500;
                             }
 
-                            if (slide_num == 4) {
+                            if (slide_num == 6) {
                                 slide_num = 0;
                             }
 
-                        }, 6000);
+                        }, 7000);
+
 
                 });
             });
@@ -116,9 +117,9 @@
                 slideSpeed: 1000,
                 lazyLoad: true,
                 singleItem: true,
-                rewindSpeed: 0,
+                rewindSpeed: 2500,
                 mouseDrag: false,
-                touchDrag: false,
+                touchDrag: true
 
             });
 
@@ -138,9 +139,12 @@
                         <div class="photo slide home-1">
                             <p>
                                 <span class="photo_font">
-                                <span class="text_fadeIn 1">曾經，你我都有過這樣的憧憬：</span>
-                                <br/><span class="text_fadeIn 2">獨自坐在高腳椅上，鎂光燈聚焦在身上，</span>
-                                <br/><span class="text_fadeIn 3">抱著吉他，抒情的旋律緩緩流瀉……。</span></span>
+                                <span class="text_fadeIn 1">舞台上</span>
+                                <br/>
+                                <br/><span class="text_fadeIn 2">你注視著我</span>
+                                <br/>
+                                <br/><span class="text_fadeIn 3">你正好奇著台上的視野是個怎麼樣的風景</span>
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -148,9 +152,12 @@
                         <div class="photo slide home-2">
                             <p>
                                 <span class="photo_font">
-                                <span class="text_fadeIn 1">曾經，你我都有過這樣的憧憬：</span>
-                                <br/><span class="text_fadeIn 2">獨自坐在高腳椅上，鎂光燈聚焦在身上，</span>
-                                <br/><span class="text_fadeIn 3">抱著吉他，抒情的旋律緩緩流瀉……。</span></span>
+                                <span class="text_fadeIn 1">我無法告訴你更多</span>
+                                <br/>
+                                <br/><span class="text_fadeIn 2">這舞台上你看到的一切</span>
+                                <br/>
+                                <br/><span class="text_fadeIn 3">是用了多少心血和時間累積起來的</span>
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -158,9 +165,8 @@
                         <div class="photo slide home-3">
                             <p>
                                 <span class="photo_font">
-                                <span class="text_fadeIn 1">曾經，你我都有過這樣的憧憬：</span>
-                                <br/><span class="text_fadeIn 2">獨自坐在高腳椅上，鎂光燈聚焦在身上，</span>
-                                <br/><span class="text_fadeIn 3">抱著吉他，抒情的旋律緩緩流瀉……。</span></span>
+                                <span class="text_fadeIn 1">你會遇見好多不一樣的人</span>
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -168,9 +174,32 @@
                         <div class="photo slide home-4">
                             <p>
                                 <span class="photo_font">
-                                <span class="text_fadeIn 1">曾經，你我都有過這樣的憧憬：</span>
-                                <br/><span class="text_fadeIn 2">獨自坐在高腳椅上，鎂光燈聚焦在身上，</span>
-                                <br/><span class="text_fadeIn 3">抱著吉他，抒情的旋律緩緩流瀉……。</span></span>
+                                <span class="text_fadeIn 1">你會碰見好多不一樣的困難</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="photo slide home-5">
+                            <p>
+                                <span class="photo_font">
+                                <span class="text_fadeIn 1">你會懷疑自己，你會迷惘</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="photo slide home-6">
+                            <p>
+                                <span class="photo_font">
+                                <span class="text_fadeIn 1">我沒辦法告訴你更多</span>
+                                <br/>
+                                <br/><span class="text_fadeIn 2">答案就讓你自己來尋找</span>
+                                <br/>
+                                <br/><span class="text_fadeIn 3">如果你願意給自己一個機會的話....</span>
+                                <br/>
+                                <br/><br/><span class="text_fadeIn 4">拿起吉他，10/7、10/8 一活大琴室來敲個門吧</span>
+                                </span>
                             </p>
                         </div>
                     </div>

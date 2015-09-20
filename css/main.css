@@ -146,8 +146,8 @@ i.inverted.circular.green.icon {
 .home-1 > p > span.photo_font {
     color: aliceblue;
     float: right;
-    margin-top: 15%;
-    margin-right: 17%;
+    margin-top: 18%;
+    margin-right: 45%;
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -173,8 +173,8 @@ i.inverted.circular.green.icon {
 .home-3 > p > span.photo_font {
     color: aliceblue;
     float: left;
-    margin-top: 30%;
-    margin-left: 17%;
+    margin-top: 35%;
+    margin-left: 10%;
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -186,8 +186,34 @@ i.inverted.circular.green.icon {
 .home-4 > p > span.photo_font {
     color: aliceblue;
     float: right;
-    margin-top: 30%;
-    margin-right: 17%;
+    margin-top: 17%;
+    margin-right: 35%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.slide.home-5 {
+    background: url("../data/img/home/5.jpg") 0% 42% / cover no-repeat;
+}
+
+.home-5 > p > span.photo_font {
+    color: aliceblue;
+    float: right;
+    margin-top: 20%;
+    margin-right: 70%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.slide.home-6 {
+    background: url("../data/img/home/6.jpg") 0% 42% / cover no-repeat;
+}
+
+.home-6 > p > span.photo_font {
+    color: aliceblue;
+    float: right;
+    margin-top: 18%;
+    margin-right: 45%;
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -198,13 +224,13 @@ i.inverted.circular.green.icon {
 
 @media (max-width: 880px) {
     .slide.home-1 {
-        background: url("../data/img/home/1.jpg") 27% 25% / cover no-repeat;
+        background: url("../data/img/home/1.jpg") 22% 0% / cover no-repeat;
     }
     .home-1 > p > span.photo_font {
         color: aliceblue;
         position: absolute;
-        margin: 12%;
-        bottom: 5%;
+        margin: 8%;
+        bottom: 12%;
         font-size: 1rem;
         line-height: 2rem;
     }
@@ -215,18 +241,18 @@ i.inverted.circular.green.icon {
         color: aliceblue;
         position: absolute;
         margin: 12%;
-        bottom: 5%;
+        bottom: 10%;
         font-size: 1rem;
         line-height: 2rem;
     }
     .slide.home-3 {
-        background: url("../data/img/home/3.jpg") 0% 21% / cover no-repeat;
+        background: url("../data/img/home/3.jpg") 45% 0% / cover no-repeat;
     }
     .home-3 > p > span.photo_font {
         color: aliceblue;
         position: absolute;
-        margin: 12%;
-        bottom: 5%;
+        margin-left: 40%;
+        bottom: 15%;
         font-size: 1rem;
         line-height: 2rem;
     }
@@ -234,6 +260,28 @@ i.inverted.circular.green.icon {
         background: url("../data/img/home/4.jpg") 36% 42% / cover no-repeat;
     }
     .home-4 > p > span.photo_font {
+        color: aliceblue;
+        position: absolute;
+        margin: 12%;
+        bottom: 35%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .slide.home-5 {
+        background: url("../data/img/home/5.jpg") 35% 0% / cover no-repeat;
+    }
+    .home-5 > p > span.photo_font {
+        color: aliceblue;
+        position: absolute;
+        margin: 12%;
+        bottom: 29%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .slide.home-6 {
+        background: url("../data/img/home/6.jpg") 36% 42% / cover no-repeat;
+    }
+    .home-6 > p > span.photo_font {
         color: aliceblue;
         position: absolute;
         margin: 12%;
