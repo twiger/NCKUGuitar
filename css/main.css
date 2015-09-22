@@ -472,7 +472,9 @@ table.ui.unstackable.basic.celled.padded.structured.table {
 #a_class,
 #b_class,
 #c_class,
-#d_class {
+#d_class,
+#e_class,
+#f_class {
     cursor: pointer;
 }
 
