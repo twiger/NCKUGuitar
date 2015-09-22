@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="dist/owl.carousel.css">
     <link rel="stylesheet" href="dist/owl.theme.css">
     <script src="dist/owl.carousel.js"></script>
+    <link href="dist/textillate/animate.css" rel="stylesheet">
+    <script src="dist/textillate/jquery.fittext.js"></script>
+    <script src="dist/textillate/jquery.lettering.js"></script>
+    <script src="dist/textillate/jquery.textillate.js"></script>
     <script>
     $(document)
         .ready(function() {
@@ -80,7 +84,44 @@
                         }
                         */
 
+
                     });
+
+                    if ($(window).width() > 880) {
+                        $('.text_fadeIn.2')
+                            .textillate({
+                                initialDelay: 800,
+                                loop: true,
+                                in : {
+                                    effect: 'bounceIn'
+                                },
+                                out: {
+                                    effect: 'bounceOut',
+                                    shuffle: true,
+                                }
+                            });
+
+                        $('.register_animation')
+                        .textillate({
+                                initialDelay: 100,
+                                loop: true,
+                                in : {
+                                    effect: 'rollIn'
+                                },
+                                out: {
+                                    effect: 'rollOut'
+                                }
+                            });
+
+                    } else {
+                        $('.text_fadeIn.2')
+                            .textillate({
+                                initialDelay: 800,
+                                in : {
+                                    effect: 'bounceIn'
+                                }
+                            });
+                    }
 
 
 
@@ -110,8 +151,8 @@
                 <div class="column">
                     <div class="ui hidden large divider"></div>
                     <div class="ui hidden large divider"></div>
-                    <h1 class="ui inverted centered alignment chi logo header">報名民謠團甄選</h1>
-                    <h1 class="ui inverted centered alignment anchor eng logo header">
+                    <h1 class="ui inverted centered alignment text_fadeIn 1 chi logo header">報名民謠團甄選</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 2 anchor eng logo header">
                         拿起吉他，10/7、10/8 一活大琴室來敲個門吧
                     </h1>
                     <div class="ui hidden large divider"></div>
@@ -119,8 +160,8 @@
             </div>
             <div class="mobile only row">
                 <div class="column">
-                    <h1 class="ui inverted centered alignment chi logo header">報名民謠團甄選</h1>
-                    <h1 class="ui inverted centered alignment eng logo header">
+                    <h1 class="ui inverted centered alignment text_fadeIn 1 chi logo header">報名民謠團甄選</h1>
+                    <h1 class="ui inverted centered alignment text_fadeIn 2 eng logo header">
                         拿起吉他，10/7、10/8 一活大琴室來敲個門吧
                     </h1>
                     <div class="ui hidden huge divider"></div>
@@ -153,7 +194,7 @@
                                 我們，要的就是你！
                             </p>
                         </div>
-                        <img class="ui fluid image" src="data/img/registration/2.jpg" />
+                        <img class="ui fluid image" src="http://i.imgur.com/UgCce90.jpg" />
                     </div>
                     <div class="ui hidden large divider"></div>
                 </div>
@@ -185,7 +226,7 @@
                                 我們，要的就是你！
                             </p>
                         </div>
-                        <img class="ui fluid image" src="data/img/registration/2.jpg" />
+                        <img class="ui fluid image" src="http://i.imgur.com/UgCce90.jpg" />
                     </div>
                     <div class="ui hidden large divider"></div>
                 </div>
@@ -337,7 +378,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="eleven wide column">
+            <div class="eight wide column">
                 <h2 class="ui inverted header">報名方式：</h2>
                 <div class="ui basic segment">
                     <h3 class="ui inverted header">
@@ -349,9 +390,26 @@
                         <br/>(現場報名名額將排至網路報名名單之後)
                     </h3>
                     <h3 class="ui inverted header">【備註】報名日期 - 即日起到 10/4 (日) 晚間 23:59 為止</h3>
+                    <div class="ui grid">
+                        <div class="bottom aligned row">
+                            <div class="six wide column">
+                                <a target="_blank" href="https://docs.google.com/forms/d/1Ayz6nIzfW1PArbA-sC06oeVMDaWIyVl5EzTHOM-fhN8/viewform" class="ui small rounded middle aligned bottom aligned image">
+                                    <img src="http://i.imgur.com/hMvpk2u.jpg" />
+                                </a>
+                            </div>
+                            <div class="seven wide column">
+                                <h3 class="ui register_animation inverted header"> 
+                                    ←線上報名入口
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="five wide column"></div>
+            <div class="eight wide column">
+                <h2 class="ui inverted header">甄選地點：</h2>
+                <img class="ui fluid image" src="http://i.imgur.com/JptP0C8.jpg" />
+            </div>
         </div>
         <div class="computer only row">
             <div class="sixteen wide column">
@@ -428,7 +486,6 @@
                     歷史 106 林敏婷 0984300216
                 </h3>
             </div>
-            
             <div class="sixteen wide column">
                 <div class="ui hidden divider"></div>
                 <div class="white_divider_bg">

@@ -146,7 +146,7 @@ i.inverted.circular.green.icon {
 /* HOME Page */
 
 .slide.home-1 {
-    background: url("../data/img/home/1.jpg") 0% 25% / cover no-repeat;
+    background: url("http://i.imgur.com/aaGLrv5.jpg") 0% 25% / cover no-repeat;
 }
 
 .home-1 > p > span.photo_font {
@@ -159,7 +159,7 @@ i.inverted.circular.green.icon {
 }
 
 .slide.home-2 {
-    background: url("../data/img/home/2.jpg") 0% 77% / cover no-repeat;
+    background: url("http://i.imgur.com/DrX6ptu.jpg") 0% 77% / cover no-repeat;
 
 }
 
@@ -173,7 +173,7 @@ i.inverted.circular.green.icon {
 }
 
 .slide.home-3 {
-    background: url("../data/img/home/3.jpg") 0% 21% / cover no-repeat;
+    background: url("http://i.imgur.com/RU4A3bC.jpg") 0% 21% / cover no-repeat;
 }
 
 .home-3 > p > span.photo_font {
@@ -186,7 +186,7 @@ i.inverted.circular.green.icon {
 }
 
 .slide.home-4 {
-    background: url("../data/img/home/4.jpg") 0% 42% / cover no-repeat;
+    background: url("http://i.imgur.com/aQz55Ko.jpg") 0% 42% / cover no-repeat;
 }
 
 .home-4 > p > span.photo_font {
@@ -199,7 +199,7 @@ i.inverted.circular.green.icon {
 }
 
 .slide.home-5 {
-    background: url("../data/img/home/5.jpg") 0% 42% / cover no-repeat;
+    background: url("http://i.imgur.com/paGTpAh.jpg") 0% 42% / cover no-repeat;
 }
 
 .home-5 > p > span.photo_font {
@@ -212,7 +212,7 @@ i.inverted.circular.green.icon {
 }
 
 .slide.home-6 {
-    background: url("../data/img/home/6.jpg") 0% 42% / cover no-repeat;
+    background: url("http://i.imgur.com/kyWXd1R.jpg") 0% 42% / cover no-repeat;
 }
 
 .home-6 > p > span.photo_font {
@@ -230,7 +230,7 @@ i.inverted.circular.green.icon {
 
 @media (max-width: 880px) {
     .slide.home-1 {
-        background: url("../data/img/home/1.jpg") 22% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/aaGLrv5.jpg") 22% 0% / cover no-repeat;
     }
     .home-1 > p > span.photo_font {
         color: aliceblue;
@@ -241,7 +241,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-2 {
-        background: url("../data/img/home/2.jpg") 0% 77% / cover no-repeat;
+        background: url("http://i.imgur.com/DrX6ptu.jpg") 0% 77% / cover no-repeat;
     }
     .home-2 > p > span.photo_font {
         color: aliceblue;
@@ -252,7 +252,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-3 {
-        background: url("../data/img/home/3.jpg") 45% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/RU4A3bC.jpg") 45% 0% / cover no-repeat;
     }
     .home-3 > p > span.photo_font {
         color: aliceblue;
@@ -263,7 +263,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-4 {
-        background: url("../data/img/home/4.jpg") 36% 42% / cover no-repeat;
+        background: url("http://i.imgur.com/aQz55Ko.jpg") 36% 42% / cover no-repeat;
     }
     .home-4 > p > span.photo_font {
         color: aliceblue;
@@ -274,7 +274,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-5 {
-        background: url("../data/img/home/5.jpg") 35% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/paGTpAh.jpg") 35% 0% / cover no-repeat;
     }
     .home-5 > p > span.photo_font {
         color: aliceblue;
@@ -285,7 +285,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-6 {
-        background: url("../data/img/home/6.jpg") 36% 42% / cover no-repeat;
+        background: url("http://i.imgur.com/kyWXd1R.jpg") 36% 42% / cover no-repeat;
     }
     .home-6 > p > span.photo_font {
         color: aliceblue;
@@ -389,7 +389,7 @@ i.inverted.circular.green.icon {
 }
 
 .slide.about-1-bg {
-    background: url("../data/img/about/2.jpg") 0% 25% / cover no-repeat;
+    background: url("http://i.imgur.com/gHKWWvY.jpg") 0% 25% / cover no-repeat;
     width: 100%;
     position: absolute;
     z-index: -100;
@@ -397,7 +397,7 @@ i.inverted.circular.green.icon {
 
 @media (max-width: 880px) {
     .slide.about-1-bg {
-        background: url("../data/img/about/2.jpg") 60% 25% / cover no-repeat;
+        background: url("http://i.imgur.com/gHKWWvY.jpg") 60% 25% / cover no-repeat;
         width: 100%;
         position: absolute;
         z-index: -100;
@@ -423,7 +423,7 @@ i.inverted.circular.green.icon {
 /* Course Page */
 
 .slide.course-1-bg {
-    background: url("../data/img/course/1.jpg") 0% 31% / cover no-repeat;
+    background: url("http://i.imgur.com/IdyyuqB.jpg") 0% 31% / cover no-repeat;
     width: 100%;
     position: absolute;
     z-index: -100;
@@ -459,7 +459,7 @@ table.ui.unstackable.basic.celled.padded.structured.table {
 /* Flok Group */
 
 .slide.flok_group-1-bg {
-    background: url("../data/img/flok_group/1.jpg") 0% 0% / cover no-repeat;
+    background: url("http://i.imgur.com/tL8WKsG.jpg") 0% 0% / cover no-repeat;
     width: 100%;
     position: absolute;
     z-index: -100;
@@ -467,7 +467,7 @@ table.ui.unstackable.basic.celled.padded.structured.table {
 
 @media (max-width: 880px) {
     .slide.flok_group-1-bg {
-        background: url("../data/img/flok_group/1.jpg") 11% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/tL8WKsG.jpg") 11% 0% / cover no-repeat;
         width: 100%;
         position: absolute;
         z-index: -100;
@@ -539,7 +539,7 @@ span.margin.left.footer{
 
 .ui.page.video.grid {
     background-color: #bfbbbb;
-    background: url("../data/img/flok_group/3.jpg") 0% 46% / cover no-repeat;
+    background: url("http://i.imgur.com/o2E0TWw.jpg") 0% 46% / cover no-repeat;
 }
 
 .inverted.transparent_bg {
@@ -558,7 +558,7 @@ span.margin.left.footer{
 /* Registration Page */
 
 .slide.registration-1-bg {
-    background: url("../data/img/registration/1.jpg") 0% 60% / cover no-repeat;
+    background: url("http://i.imgur.com/vAZK1zM.jpg") 0% 60% / cover no-repeat;
     width: 100%;
     position: absolute;
     z-index: -100;
