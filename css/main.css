@@ -238,7 +238,7 @@ i.inverted.circular.green.icon {
 
 @media (max-width: 880px) {
     .slide.home-1 {
-        background: url("http://i.imgur.com/aaGLrv5.jpg") 22% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/n5vBSTe.jpg") 22% 0% / cover no-repeat;
     }
     .home-1 > p > span.photo_font {
         color: aliceblue;
@@ -249,7 +249,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-2 {
-        background: url("http://i.imgur.com/DrX6ptu.jpg") 0% 77% / cover no-repeat;
+        background: url("http://i.imgur.com/01wHWgd.jpg") 0% 77% / cover no-repeat;
     }
     .home-2 > p > span.photo_font {
         color: aliceblue;
@@ -260,7 +260,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-3 {
-        background: url("http://i.imgur.com/RU4A3bC.jpg") 45% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/JSe7Ime.jpg") 45% 0% / cover no-repeat;
     }
     .home-3 > p > span.photo_font {
         color: aliceblue;
@@ -271,7 +271,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-4 {
-        background: url("http://i.imgur.com/aQz55Ko.jpg") 36% 42% / cover no-repeat;
+        background: url("http://i.imgur.com/fdHS7SV.jpg") 36% 42% / cover no-repeat;
     }
     .home-4 > p > span.photo_font {
         color: aliceblue;
@@ -282,7 +282,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-5 {
-        background: url("http://i.imgur.com/paGTpAh.jpg") 35% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/JvnTuwL.jpg") 35% 0% / cover no-repeat;
     }
     .home-5 > p > span.photo_font {
         color: aliceblue;
@@ -293,7 +293,7 @@ i.inverted.circular.green.icon {
         line-height: 2rem;
     }
     .slide.home-6 {
-        background: url("http://i.imgur.com/kyWXd1R.jpg") 36% 42% / cover no-repeat;
+        background: url("http://i.imgur.com/WoUps9t.jpg") 36% 42% / cover no-repeat;
     }
     .home-6 > p > span.photo_font {
         color: aliceblue;
@@ -405,7 +405,7 @@ i.inverted.circular.green.icon {
 
 @media (max-width: 880px) {
     .slide.about-1-bg {
-        background: url("http://i.imgur.com/gHKWWvY.jpg") 60% 25% / cover no-repeat;
+        background: url("http://i.imgur.com/yYFH3u8.jpg") 60% 25% / cover no-repeat;
         width: 100%;
         position: absolute;
         z-index: -100;
@@ -435,6 +435,15 @@ i.inverted.circular.green.icon {
     width: 100%;
     position: absolute;
     z-index: -100;
+}
+
+@media (max-width: 880px) {
+    .slide.course-1-bg {
+        background: url("http://i.imgur.com/2v68uq2.jpg") 0% 31% / cover no-repeat;
+        width: 100%;
+        position: absolute;
+        z-index: -100;
+    }
 }
 
 .slide.course-1 {
@@ -479,10 +488,14 @@ table.ui.unstackable.basic.celled.padded.structured.table {
 
 @media (max-width: 880px) {
     .slide.flok_group-1-bg {
-        background: url("http://i.imgur.com/tL8WKsG.jpg") 11% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/ha9gr17.jpg") 11% 0% / cover no-repeat;
         width: 100%;
         position: absolute;
         z-index: -100;
+    }
+    .ui.page.video.grid {
+        background-color: #bfbbbb;
+        background: url("http://i.imgur.com/2an3EIT.jpg") 0% 46% / cover no-repeat;
     }
 }
 
@@ -574,6 +587,15 @@ span.margin.left.footer {
     width: 100%;
     position: absolute;
     z-index: -100;
+}
+
+@media (max-width: 880px) {
+    .slide.registration-1-bg {
+        background: url("http://i.imgur.com/8K4V43A.jpg") 0% 60% / cover no-repeat;
+        width: 100%;
+        position: absolute;
+        z-index: -100;
+    }
 }
 
 .slide.registration-1 {
