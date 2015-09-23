@@ -90,7 +90,7 @@
                         .textillate({
                             initialDelay: 500,
                             in : {
-                                effect: 'rotateIn'
+                                effect: 'flipInY'
                             }
                         });
 
@@ -100,10 +100,10 @@
                                 initialDelay: 800,
                                 loop: true,
                                 in : {
-                                    effect: 'rotateIn'
+                                    effect: 'flipInY'
                                 },
                                 out: {
-                                    effect: 'rotateOut',
+                                    effect: 'flipOutY',
                                     shuffle: true,
                                 }
                             });
@@ -112,7 +112,7 @@
                             .textillate({
                                 initialDelay: 800,
                                 in : {
-                                    effect: 'rotateIn'
+                                    effect: 'flipInY'
                                 }
                             });
                     }
@@ -127,10 +127,11 @@
                                     .textillate({
                                         initialDelay: delay,
                                         in : {
-                                            effect: 'fadeInRight'
+                                            effect: 'fadeInRight',
+                                            delay: 30
                                         }
                                     });
-                                delay = delay + 1000;
+                                delay = delay + 700;
                             }
                         }
 
