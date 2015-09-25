@@ -155,14 +155,14 @@ i.inverted.circular.green.icon {
 /* HOME Page */
 
 .slide.home-1 {
-    background: url("http://i.imgur.com/aaGLrv5.jpg") 0% 25% / cover no-repeat;
+    background: url("http://i.imgur.com/pMlo4Sl.jpg") 0% 25% / cover no-repeat;
 }
 
 .home-1 > p > span.photo_font {
     color: aliceblue;
     float: right;
-    margin-top: 18%;
-    margin-right: 45%;
+    margin-top: 25%;
+    margin-right: 20%;
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -238,7 +238,7 @@ i.inverted.circular.green.icon {
 
 @media (max-width: 880px) {
     .slide.home-1 {
-        background: url("http://i.imgur.com/n5vBSTe.jpg") 22% 0% / cover no-repeat;
+        background: url("http://i.imgur.com/pkMVDk5.jpg") 40% 0% / cover no-repeat;
     }
     .home-1 > p > span.photo_font {
         color: aliceblue;
